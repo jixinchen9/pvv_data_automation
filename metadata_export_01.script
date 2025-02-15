@@ -1,0 +1,15 @@
+DoCommand("WS1.TSInput1", ClearFiles)
+DoCommand("WS1.TSInput1", AddFiles, "D:\086 local test ncode\4_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_29C.sie;r-1;b-1;m-1;ats;c1-146;pSieBurstHandling=2;pSieChanTitleSource=0;pSieChannelNumbering=0;pSieYTitleSource=0")
+#
+# Overriding the following properties:
+#   Overwrite,OverwriteExisting
+# Searching for Value="Ask", replacing with "Yes"
+#
+
+SetProperty("WS1.MetaDataOutput2","Overwrite","Yes")
+
+#
+# Property settings from each glyph can be output to the script file by setting the
+# preference /Applications/GlyphWorks/SavePropertiesWithBatchScript to True.
+#
+
