@@ -70,8 +70,12 @@ def filter_metadata(metadata_list, folder, filename):
             for i in metadata_list:
                 if row[0] in i.get("ChanTitle"):
                     filtered_list.append(i)
-    f.close()
-    return filtered_list
+        
+        f.close()
+        
+        sorted_filtered_list = sorted(filtered_list, key=lambda x: x['File_name'])
+
+    return sorted_filtered_list
 
 '''
 takes in name and path string of metadata file, and attributes named in fields to collect 

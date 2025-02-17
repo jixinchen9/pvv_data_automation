@@ -12,25 +12,18 @@ import file_finder
 import def_output
 import ncode_metadata
 import run_ncode
+
 '''
-++++++++++++++++++++++++O+++++++++++++++++++++++O++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '''
 
 siefile_folder = "D:\\086 local test ncode\\"
-#metadata_filename = "3_Mercury_WT_13.6_LPB_FT4_YINLUN_PP_405kw_29C_meta_raw"
 
 fields_to_collect = ["ChanTitle",
-                   "\"Max\"",
-                   "Mean",
-                   "\"Min\"",
-                   "SDev"
-    ]
-
-fields_to_output = ["ChanTitle",
-                   "\"Max\"",
-                   "Mean",
-                   "\"Min\"",
-                   "SDev"
+                    "\"Max\"",
+                    "Mean",
+                    "\"Min\"",
+                    "SDev"
     ]
 
 filter_folder = "D:\\086 local test ncode\\"
@@ -52,7 +45,7 @@ sie_files = file_finder.find_sie(siefile_folder)
 #make changes to the batch script file to include all sie files
 #hit the batch file to create metadata files
 
-#run_ncode.edit_script(batfile_folder, batscript_filename, batfile_filename, sie_files)
+run_ncode.edit_script(batfile_folder, batscript_filename, batfile_filename, sie_files)
 
 #find all the generated metadata files in the folder
 metadata_files = file_finder.find_metadata_files(siefile_folder)
@@ -61,11 +54,11 @@ metadata_files = file_finder.find_metadata_files(siefile_folder)
 full_list_tall = ncode_metadata.read_metadata(siefile_folder, metadata_files, fields_to_collect)
 
 #optionally filter the full list or lists wrt channels
-#short_list = ncode_metadata.filter_metadata(full_list_tall, filter_folder, filter_filename)
+short_list = ncode_metadata.filter_metadata(full_list_tall, filter_folder, filter_filename)
 
 #pivot the full list or filtered wrt to channels list to a 'wide' table, flattened
 #based on filename
-pivoted_list = def_output.wide_table(full_list_tall, sie_files, fields_to_output)
+pivoted_list = def_output.wide_table(short_list, sie_files, fields_to_collect)
 
 #write the csv
 def_output.write_csv(pivoted_list,output_name)
