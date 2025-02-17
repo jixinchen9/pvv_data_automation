@@ -17,7 +17,7 @@ import run_ncode
 '''
 
 siefile_folder = "D:\\086 local test ncode\\"
-metadata_filename = "3_Mercury_WT_13.6_LPB_FT4_YINLUN_PP_405kw_29C_meta_raw"
+#metadata_filename = "3_Mercury_WT_13.6_LPB_FT4_YINLUN_PP_405kw_29C_meta_raw"
 
 fields_to_collect = ["ChanTitle",
                    "\"Max\"",
@@ -29,6 +29,8 @@ fields_to_collect = ["ChanTitle",
 fields_to_output = ["ChanTitle",
                    "\"Max\"",
                    "Mean",
+                   "\"Min\"",
+                   "SDev"
     ]
 
 filter_folder = "D:\\086 local test ncode\\"
@@ -56,32 +58,14 @@ sie_files = file_finder.find_sie(siefile_folder)
 metadata_files = file_finder.find_metadata_files(siefile_folder)
 
 #run regex search on metadata files for collected attributes and place into appropriate data structure
-full_list = ncode_metadata.read_metadata(siefile_folder, metadata_files, fields_to_collect)
+full_list_tall = ncode_metadata.read_metadata(siefile_folder, metadata_files, fields_to_collect)
 
 #optionally filter the full list or lists wrt channels
-#short_list = ncode_metadata.filter_metadata(full_list, filter_folder, filter_filename)
+#short_list = ncode_metadata.filter_metadata(full_list_tall, filter_folder, filter_filename)
 
-#write the csv, optionally choose what attributes to output
-'''
-for index, summary in enumerate(full_list):
-    def_output.write_csv(siefile_folder+metadata_files[index], fields_to_output, summary)
-'''
+#pivot the full list or filtered wrt to channels list to a 'wide' table, flattened
+#based on filename
+pivoted_list = def_output.wide_table(full_list_tall, sie_files, fields_to_output)
 
-'''
-with open(siefile_folder+output_name,'w', newline = '') as f:
-    f_writer = csv.writer(f)
-    for i in range(len(full_list[0])):
-        f_writer.writerow([""])
-    f.close()
-
-fields = fields_to_output
-'''
-with open(siefile_folder+metadata_files[0]+".csv",'r') as f:
-    read_thing = csv.reader(f)
-    list_of_rows=[]
-    for j in read_thing:
-        list_of_rows.append(j)
-    f.close()
-
-    
-    
+#write the csv
+def_output.write_csv(pivoted_list,output_name)
