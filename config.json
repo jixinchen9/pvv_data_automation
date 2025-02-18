@@ -1,6 +1,6 @@
 {
 	"Input":{
-		"path":"D:\\086 local test ncode\\"
+		"path":"D:\\086 local test ncode\\input\\"
 	},
 	"Filter":{
 		"path":"D:\\086 local test ncode\\",
@@ -13,5 +13,12 @@
 	},
 	"Output":{
 		"filename":"metadata_all_output"
-	}
+	},
+	"Attributes":[
+		{"name":"ChanTitle"},
+		{"name":"\"Max\""},
+		{"name":"Mean"},
+		{"name":"\"Min\""},
+		{"name":"SDev"}
+	]
 }

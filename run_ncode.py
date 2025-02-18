@@ -14,7 +14,7 @@ then it replaces the sie file name in the template line and writes new lines bas
 finally it will rewrite the original batch script file
 '''
 
-def edit_script(folder, script, bat, sie_list):
+def edit_script(folder, script, bat, sie_list, sie_folder):
     sie_entry_searcher = r'\"(.*?)\;'
     
     with open(folder + script, 'r') as f:
@@ -38,10 +38,9 @@ def edit_script(folder, script, bat, sie_list):
     for j in sie_list:
         
         script_contents.pop(1)
-        script_contents.insert(1, template_line.replace(replaced, folder + j))
-        # print(script_contents[0])
-        # print(script_contents[1])
-        # print(script_contents[2])
+        script_contents.insert(1, template_line.replace(replaced, sie_folder + j)+"\n")
+        #script_contents.insert(2,"\n")
+
         with open(folder + script, 'w') as f:
             for k in script_contents:
                 f.writelines(k)
