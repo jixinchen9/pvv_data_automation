@@ -24,7 +24,7 @@ intensive, but honestly probably doesnt matter for the small inputs
 '''
     
 def write_csv(input_list,file_name):
-    with open (file_name, mode = 'w', newline = '') as f:
+    with open (file_name + ".csv", mode = 'w', newline = '') as f:
         f_writer = csv.writer(f)
 
         for row in input_list:

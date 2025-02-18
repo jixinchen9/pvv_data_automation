@@ -1,0 +1,17 @@
+{
+	"Input":{
+		"path":"D:\\086 local test ncode\\"
+	},
+	"Filter":{
+		"path":"D:\\086 local test ncode\\",
+		"filename":"Channel_list_example.csv"
+	},
+	"ncode":{
+		"path":"D:\\086 local test ncode\\",
+		"batfile":"metadata_export_01.bat",
+		"batch_script":"metadata_export_01.script"
+	},
+	"Output":{
+		"filename":"metadata_all_output"
+	}
+}
