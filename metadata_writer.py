@@ -4,8 +4,9 @@ Created on Mon Feb 10 14:13:59 2025
 
 @author: jc16287
 """
-# import regex as re
-# import csv
+import regex as re
+import pandas as pd
+import csv
 # import os
 # import json
 
@@ -18,8 +19,7 @@ import gather_input
 #this is the only way to write inputs, by reading the config file
 config_filename = "config.json"
    
-siefile_folder, filter_folder, filter_filename, batfile_folder, batfile_filename, batscript_filename, output_name, fields_to_collect = gather_input.read_config_metadata(config_filename)
-
+siefile_folder, filter_folder, filter_filename, batfile_folder, batfile_filename, batscript_filename, output_name, fields_to_collect, output_folder = gather_input.read_config_metadata(config_filename)
 #find all the sie files in the folder
 sie_files = file_finder.find_sie(siefile_folder)
 
@@ -32,14 +32,14 @@ run_ncode.edit_script(batfile_folder, batscript_filename, batfile_filename, sie_
 metadata_files = file_finder.find_metadata_files(siefile_folder)
 
 #run regex search on metadata files for collected attributes and place into appropriate data structure
-full_list_tall = ncode_metadata.read_metadata(siefile_folder, metadata_files, fields_to_collect)
+full_df_tall = ncode_metadata.read_metadata_df(siefile_folder, metadata_files, fields_to_collect)
 
 #optionally filter the full list or lists wrt channels
-short_list = ncode_metadata.filter_metadata(full_list_tall, filter_folder, filter_filename)
+short_df = ncode_metadata.filter_metadata_df(full_df_tall, filter_folder, filter_filename)
 
 #pivot the full list or filtered wrt to channels list to a 'wide' table, flattened
 #based on filename
-pivoted_list = def_output.wide_table(short_list, sie_files, fields_to_collect)
+wide_df = pd.pivot(full_df_tall, index='ChanTitle', columns = ['Filename','Attribute'], values = 'value')
 
 #write the csv
-def_output.write_csv(pivoted_list,output_name)
+wide_df.to_csv(path_or_buf = output_folder+output_name+".csv")

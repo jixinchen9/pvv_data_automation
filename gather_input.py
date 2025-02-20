@@ -21,10 +21,11 @@ def read_config_metadata(filename):
         ebatscript_filename = config['ncode']['batch_script']
         
         eoutput_name = config['Output']['filename']
+        eoutput_path = config['Output']['path']
         
         efields_to_collect =[]
         for i in config['Attributes']:
             efields_to_collect.append(i.get('name'))
         f.close()
     
-    return e_siefile_folder, efilter_folder, efilter_filename, ebatfile_folder, ebatfile_filename, ebatscript_filename, eoutput_name, efields_to_collect
+    return e_siefile_folder, efilter_folder, efilter_filename, ebatfile_folder, ebatfile_filename, ebatscript_filename, eoutput_name, efields_to_collect, eoutput_path

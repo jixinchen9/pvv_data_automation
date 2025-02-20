@@ -31,6 +31,12 @@ def write_csv(input_list,file_name):
             f_writer.writerow(row)
     f.close()
 
+'''
+naive function written which basically does a df.pivot, will replace with the actual pandas 
+method, secondarily it has some stuff in there to clean up the tables, it inserts column titles for attributes 
+and file name, and also removes columns with repeat chan names
+'''
+
 def wide_table(input_list_metadata, input_files, output_columns):
     all_output_row=[]
     
