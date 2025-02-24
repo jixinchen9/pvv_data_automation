@@ -1,0 +1,5 @@
+# ignore any files in 'output' folder
+output/
+
+# ignore any generated metadata files
+input/*meta*
