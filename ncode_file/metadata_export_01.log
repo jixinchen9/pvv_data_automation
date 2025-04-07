@@ -187,3 +187,66 @@ Program 0 [WS1] - 2 steps...
 Program 0 OK
 
 Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 15:41:28 24-Mar-2025
+
+Flowproc
+
+Command Line: /flow=d:\086 local test ncode\ncode_file\metadata_export_01.flo /script=d:\086 local test ncode\ncode_file\metadata_export_01.script /verbose=yes /batlog=d:\086 local test ncode\ncode_file\metadata_export_01.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\086 local test ncode\ncode_file\metadata_export_01.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 15:41:34 24-Mar-2025
+
+Flowproc
+
+Command Line: /flow=d:\086 local test ncode\ncode_file\metadata_export_01.flo /script=d:\086 local test ncode\ncode_file\metadata_export_01.script /verbose=yes /batlog=d:\086 local test ncode\ncode_file\metadata_export_01.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\086 local test ncode\ncode_file\metadata_export_01.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 15:41:38 24-Mar-2025
+
+Flowproc
+
+Command Line: /flow=d:\086 local test ncode\ncode_file\metadata_export_01.flo /script=d:\086 local test ncode\ncode_file\metadata_export_01.script /verbose=yes /batlog=d:\086 local test ncode\ncode_file\metadata_export_01.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\086 local test ncode\ncode_file\metadata_export_01.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 

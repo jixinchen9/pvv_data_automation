@@ -1,0 +1,9 @@
+{
+	"Requirement":{
+		"path":"D:\\086 local test ncode\\input\\EAR_eval\\Data_Automation_Benchmark_Requirements.csv"
+	},
+	"Data":{
+		"path":"D:\\086 local test ncode\\input\\EAR_eval\\Data_Automation_Benchmark_Data.csv"
+	}
+	
+}

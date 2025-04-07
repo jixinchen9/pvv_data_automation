@@ -1,0 +1,1 @@
+libsie-demo.exe "D:\086 local test ncode\input\sie_plotter\test_wt.sie" > "D:\086 local test ncode\temp\output.csv"
