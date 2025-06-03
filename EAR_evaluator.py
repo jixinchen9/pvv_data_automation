@@ -78,34 +78,18 @@ for idx, row in requirement_input_df.iterrows():
         
     if row['hint'] == "Labview":
         lv_result_df = Scrape_EAR.scrape_labview_master(search_channel, files, scrape_res_df, lv_summary_df)
-        '''
-        scrape the labview master or other doc for channel results in search_channel
-        
-            searches entire df of labview master for cell corresponding to correct file name and channel name
-            adds it to the scrape_res_df which rn is agnostic and will contain all results
-        
-        
-        for channel in search_channel:
-            
-            for file in files:
-                try:
-                    lv_result = lv_summary_df.loc[lv_summary_df['CAC'].str.contains(channel), file].values[0]
-                    print(channel, "::" , lv_result)
-                    
-                    scrape_row = [file, channel, lv_result, "lv_agg", np.nan]
-                    scrape_res_df = pd.concat([pd.DataFrame([scrape_row], columns= scrape_res_df.columns), scrape_res_df], ignore_index=True)
-                
-                except IndexError:
-                    print(channel, " not found.")
-                except KeyError:
-                    print(file, " not found")
-        '''
-        
-
-                
-                
-    
+  
 '''
 evaluate EAR
 evalate calculation
+'''
+
+'''
+for lv master evaluation
+
+isolate evaluation equation
+isolate relevant channels and group by file name
+
+evaluate per equation and then compile results
+ 
 '''

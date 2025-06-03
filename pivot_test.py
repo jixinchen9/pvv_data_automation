@@ -24,11 +24,12 @@ df_1 = pd.DataFrame(data_1, columns = ['file', 'channel', 'value'])
 
 df_1_wide = pd.pivot(df_1, index='channel', columns = ['file'], values = 'value')
 
+'''
 lab_channel_1 = 1
 lab_channel_2 = 2
 
 expression = "abs(lab_channel_1-lab_channel_2)"
 
 result = eval(expression)
-
+'''
 
