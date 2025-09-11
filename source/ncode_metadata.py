@@ -12,7 +12,7 @@ takes in name and path string of metadata file, and attributes named in fields t
 outputs a list of dicts containing the attributes in fields to collect
 dicts correspond to individual channels
 '''
-def read_metadata_df(folder, files ,desired_columns):
+def read_metadata_df(files ,desired_columns):
     
     start_search = False
     metadata_df = pd.DataFrame(columns=['Filename','ChanTitle','Attribute','value'])
@@ -20,10 +20,10 @@ def read_metadata_df(folder, files ,desired_columns):
     quote_searcher = r'\"(.*?)\"'
     
     for file in files:
-        print(file)
+        print(f"Scraping all metadata channels from: {file}")
         
         
-        with open(folder + file) as f:
+        with open(file) as f:
             for line in f:
                 #the code tries to guard against picking up stat field that actually
                 #belong to another channel
@@ -65,7 +65,7 @@ reads filter spreadsheet and filters the tall df
 '''
 def filter_metadata_df(metadata_list, folder, filename):
     filtered_channels=[]
-    with open(folder + filename, newline = '') as f:
+    with open(folder + "/" + filename, newline = '') as f:
         f_reader = csv.reader(f)
         
         for row in f_reader:
@@ -148,3 +148,4 @@ def read_metadata(folder, files ,desired_columns):
         
         
     return channel_dict_list
+

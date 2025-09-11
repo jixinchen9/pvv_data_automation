@@ -1,0 +1,29 @@
+{
+	"Input":{
+		"path":"D:\\086 local test ncode\\input\\",
+		"status":"deprecated"
+	},
+	"Filter":{
+		"path":"../input/metadata_writer",
+		"filename":"Channel_list_example.csv"
+	},
+	"ncode":{
+		"path":"./ncode_file",
+		"batfile":"metadata_export_clean.bat",
+		"batch_script":"metadata_export_clean.script"
+	},
+	"ncode_app":{
+		"path":"C:\\Program Files\\nCode\\nCode 2023.1 64-bit\\GlyphWorks\\bin\\flowproc"
+	},
+	"Output":{
+		"path":"../output/metadata_writer",
+		"filename":"metadata_filtrd_output"
+	},
+	"Attributes":[
+		{"name":"ChanTitle"},
+		{"name":"\"Max\""},
+		{"name":"Mean"},
+		{"name":"\"Min\""},
+		{"name":"SDev"}
+	]
+}

@@ -19,7 +19,7 @@ import gather_input
 #this is the only way to write inputs, by reading the config file
 config_filename = "config.json"
    
-siefile_folder, filter_folder, filter_filename, batfile_folder, batfile_filename, batscript_filename, output_name, fields_to_collect, output_folder = gather_input.read_config_metadata(config_filename)
+siefile_folder, filter_folder, filter_filename, batfile_folder, batfile_filename, batscript_filename, output_name, fields_to_collect, output_folder, ncode_app_path = gather_input.read_config_metadata(config_filename)
 #find all the sie files in the folder
 sie_files = file_finder.find_sie(siefile_folder)
 

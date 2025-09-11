@@ -10,8 +10,9 @@ import pandas as pd
 import os
 
 def read_config_metadata(filename):
-     
-    with open(filename) as f:
+    
+    abs_filename = os.path.abspath(filename) 
+    with open(abs_filename) as f:
         config = json.load(f)
         
         e_siefile_folder = config['Input']['path']
@@ -26,12 +27,14 @@ def read_config_metadata(filename):
         eoutput_name = config['Output']['filename']
         eoutput_path = config['Output']['path']
         
+        encode_app_path = config['ncode_app']['path']
+        
         efields_to_collect =[]
         for i in config['Attributes']:
             efields_to_collect.append(i.get('name'))
         f.close()
     
-    return e_siefile_folder, efilter_folder, efilter_filename, ebatfile_folder, ebatfile_filename, ebatscript_filename, eoutput_name, efields_to_collect, eoutput_path
+    return e_siefile_folder, efilter_folder, efilter_filename, ebatfile_folder, ebatfile_filename, ebatscript_filename, eoutput_name, efields_to_collect, eoutput_path, encode_app_path
 
 def read_config_EAR_eval(filename):
     
@@ -93,12 +96,32 @@ def gather_group(input_file):
 def get_full_paths(file_list, folder_list):
     # list comprehension ya dig
     full_path_list = []
-    
+
     for row in folder_list:
-        files_found = os.listdir(row)
-        matched_files = [item for item in files_found if any(substring in item for substring in file_list)]
         
-        for i in matched_files:
+        files_found = os.listdir(row)
+        #matched_files = [item for item in files_found if any(substring in item for substring in file_list)]
+        matched_files_os, matched_files_query = case_insensitive_search(file_list, files_found)
+        
+        for i in matched_files_os:
             full_path_list.append(row + "\\" + i )
+        
+        
+    not_found_files = list(set(file_list) - set(matched_files_query))
+
+    return full_path_list, not_found_files, 
+
+def case_insensitive_search(needle_list, haystack_list):
+    result_list = []
+    found_counter = []
     
-    return full_path_list
+    for i in needle_list:
+        for j in haystack_list:
+            
+            if i.lower() in j.lower():
+                result_list.append(j)
+                found_counter.append(i)
+                break
+                
+    return result_list, found_counter
+

@@ -1,5 +1,5 @@
 DoCommand("WS1.TSInput1", ClearFiles)
-DoCommand("WS1.TSInput1", AddFiles, "D:\086 local test ncode\input\4_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_29C.sie;r-1;b-1;m-1;ats;c1-146;pSieBurstHandling=2;pSieChanTitleSource=0;pSieChannelNumbering=0;pSieYTitleSource=0")
+DoCommand("WS1.TSInput1", AddFiles, "\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\03 eDaq\Mercury 13.6L Application Approval\LPB FT4 Yinlun\10_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_47C.sie;r-1;b-1;m-1;ats;c1-146;pSieBurstHandling=2;pSieChanTitleSource=0;pSieChannelNumbering=0;pSieYTitleSource=0")
 
 #
 # Overriding the following properties:
