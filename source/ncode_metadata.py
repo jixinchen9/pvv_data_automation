@@ -7,6 +7,20 @@ Created on Thu Feb 13 14:14:16 2025
 import csv
 import regex as re
 import pandas as pd
+import log_writer
+
+
+'''
+helper function to just put the filename of the metadata path into the ultimate output
+'''
+def extract_file_name(file_path):
+    
+    find_last_slash = r"\\(?!.*\\)"
+    last_slash = re.search(find_last_slash,file_path)
+    just_file_name = file_path[last_slash.end():]
+    
+    return just_file_name
+
 '''
 takes in name and path string of metadata file, and attributes named in fields to collect 
 outputs a list of dicts containing the attributes in fields to collect
@@ -57,6 +71,10 @@ def read_metadata_df(files ,desired_columns):
                     start_search = False
                     
             f.close()
+            log_writer.create_log_entry("collected metadata from this file:", log_writer.metadata_v01_log.content)
+            log_writer.create_log_entry(file, log_writer.metadata_v01_log.content)
+    
+    metadata_df['Filename'] = metadata_df['Filename'].apply(extract_file_name)
     return metadata_df
 
 
@@ -76,6 +94,8 @@ def filter_metadata_df(metadata_list, folder, filename):
     
         f.close()
     
+    log_writer.create_log_entry("output metadata from these channels only:", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(filtered_channels, log_writer.metadata_v01_log.content)
     return filtered_df
 
 '''

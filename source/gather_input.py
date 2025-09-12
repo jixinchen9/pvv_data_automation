@@ -8,6 +8,8 @@ import json
 import regex as re
 import pandas as pd
 import os
+import log_writer
+
 
 def read_config_metadata(filename):
     
@@ -90,7 +92,13 @@ def gather_group(input_file):
     # The following is not quite right, it ignores groups, correct soon
     files = inputs_df.loc[inputs_df['Type']=='file']['name'].tolist()
     folders = inputs_df.loc[inputs_df['Type']=='path']['name'].tolist()
-        
+    
+    log_writer.create_log_entry("will look for these files:", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(files, log_writer.metadata_v01_log.content)
+    
+    log_writer.create_log_entry("will look in these folders:", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(folders, log_writer.metadata_v01_log.content)
+    
     return files, folders
 
 def get_full_paths(file_list, folder_list):

@@ -9,6 +9,7 @@ Created on Thu Feb 13 13:45:13 2025
 gives list of .sie files given a folder path string
 '''
 import os
+import log_writer
 
 def find_sie(folder):
     
@@ -42,19 +43,26 @@ def find_metadata_files(folder):
     return metadata_filelist
 
 '''
-find metadata files in multiple folders, writes abs paths
+find metadata files in multiple folders, writes abs paths, also returns all filenames alone
 '''
 def find_meta_files_multifolder(folder_list):
     
+    all_metadata_paths = []
     all_metadata_files = []
+    
     for folder in folder_list:
         
         metadata_files = find_metadata_files(folder)
         prefix = folder + "\\"
         metadata_paths = [prefix + item for item in metadata_files]
-        all_metadata_files += metadata_paths
+        
+        all_metadata_paths += metadata_paths
+        all_metadata_files += metadata_files
     
-    return all_metadata_files
+    log_writer.create_log_entry("the following metadata files were generated:", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(all_metadata_files, log_writer.metadata_v01_log.content)
+    
+    return all_metadata_paths, all_metadata_files
 
 '''
 given a list of file name queries and list of files, searches all folder for all queries
@@ -75,6 +83,12 @@ def get_full_paths(file_list, folder_list):
         
         
     not_found_files = list(set(file_list) - set(matched_files_query))
+    
+    log_writer.create_log_entry("found these files", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(full_path_list, log_writer.metadata_v01_log.content)
+    
+    log_writer.create_log_entry("the following file names were not found:", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(not_found_files, log_writer.metadata_v01_log.content)
 
     return full_path_list, not_found_files, 
 

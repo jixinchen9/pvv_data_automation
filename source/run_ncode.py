@@ -6,7 +6,7 @@ Created on Fri Feb 14 10:52:30 2025
 """
 import regex as re
 import os
-
+import log_writer
 '''
 this function takes in the folder location and name of the batch script from ncode
 currently it will take any lines that looks like it refers to a sie file, copy it to a template, and delete the original line that adds the sie file
@@ -43,7 +43,6 @@ def edit_script(folder, script, bat, sie_list):
        
     for j in sie_list:
         
-        try_slash = repr(j)
         script_contents.pop(1)
         script_contents.insert(1, template_line.replace(replaced, j)+"\n")
         #script_contents.insert(2,"\n")
@@ -54,6 +53,8 @@ def edit_script(folder, script, bat, sie_list):
             f.close()
             
         os.system(batchfile_path)
+        log_writer.create_log_entry("execute ncode flo on target:", log_writer.metadata_v01_log.content)
+        log_writer.create_log_entry(j, log_writer.metadata_v01_log.content)
 
 '''
 
