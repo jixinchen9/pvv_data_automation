@@ -1,1 +1,1 @@
-libsie-demo.exe "D:\086 local test ncode\input\sie_plotter\test_wt.sie" > "D:\086 local test ncode\temp\output.csv"
+libsie-demo.exe "\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\03 eDaq\Mercury 13.6L Application Approval\LPB FT4 Yinlun\10_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_47C.sie" > "D:\try_area\PVV_productivity_tools\temp\10_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_47Cexport.csv"

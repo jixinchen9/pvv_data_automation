@@ -9,7 +9,7 @@ import regex as re
 import pandas as pd
 import os
 import log_writer
-
+import config_builder
 
 def read_config_metadata(filename):
     
@@ -133,3 +133,80 @@ def case_insensitive_search(needle_list, haystack_list):
                 
     return result_list, found_counter
 
+def gather_group_clean():
+    
+    collect_line = False
+    search_result = []
+    
+    input_file = config_builder.config_v2_inst.input_path + "/" + config_builder.config_v2_inst.input_data
+    
+    with open(input_file) as f:
+        data_contents = f.readlines()
+        
+        for line in data_contents:
+            if "file_start" in line:
+                collect_line = True
+                group_number = re.search("[0-99]",line).group()
+                row_type = "file"
+                continue
+            
+            if "file_end" in line:
+                group_number = None
+                row_type = None
+                collect_line = False
+                
+            if "path_start" in line:
+                collect_line = True
+                group_number = re.search("[0-99]",line).group()
+                row_type = "path"
+                continue
+                
+            if "path_end" in line:
+                collect_line = False
+                group_number = None
+                row_type = None
+                
+                
+            if collect_line:
+                #print(line)
+                search_result.append([row_type, group_number, line.rstrip('\n')])
+        
+        f.close()
+        
+    inputs_df = pd.DataFrame(search_result, columns = ['Type', 'group', 'name'])
+    
+    # The following is not quite right, it ignores groups, correct soon
+    files = inputs_df.loc[inputs_df['Type']=='file']['name'].tolist()
+    folders = inputs_df.loc[inputs_df['Type']=='path']['name'].tolist()
+    
+    log_writer.create_log_entry("will look for these files:", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(files, log_writer.metadata_v01_log.content)
+    
+    log_writer.create_log_entry("will look in these folders:", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(folders, log_writer.metadata_v01_log.content)
+    
+    return files, folders
+
+def get_timeslice_file_path():
+    
+    input_file = config_builder.config_v2_inst.input_path + "/" + config_builder.config_v2_inst.input_data
+    collect_line = False
+    search_result = []
+    
+    with open(input_file) as f:
+        data_contents = f.readlines()
+        
+        for line in data_contents:
+            if "timeslice_full_path_start" in line:
+                collect_line = True
+                continue
+            
+            if "timeslice_full_path_end" in line:
+                collect_line = False
+            
+            if collect_line:
+                search_result.append(line.rstrip('\n'))
+        
+        f.close()
+    
+    return search_result

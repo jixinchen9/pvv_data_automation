@@ -1,12 +1,19 @@
 {
 	"Input":{
 		"path":"../input/metadata_writer",
-		"data":"Data_Automation_Benchmark_Data.csv",
+		"data":"Data_Automation_Benchmark_Data_w_timeslice.csv",
 		"requirement":"na"
 	},
 	"Filter":{
 		"path":"../input/metadata_writer",
 		"filename":"Channel_list_example.csv"
+	},
+	"timeslice":{
+		"path":"\\fhxnas02\\pdcteams\\combine\\Power Module\\PV&V\\Lab\\Windtunnel\\Tier 4 Final\\Mercury_13.6L-S750 & 9.0L\\04 Labview\\Mercury 13.6L Application Approval\\LPB FT4 Yinlun\\A-108308_A-154687",
+		"filename":"WabcoProductionExhaust Tube.xls",
+		"option":1,
+		"helper_test":"CAC",
+		"helper_slice":"time_slice"
 	},
 	"ncode":{
 		"path":"./ncode_file",
@@ -17,16 +24,22 @@
 		"path":"./x64",
 		"batfile":"output_temp.bat"
 	},
+	"temp":{
+		"path":"../temp"
+	},
 	"ncode_app":{
 		"path":"C:\\Program Files\\nCode\\nCode 2023.1 64-bit\\GlyphWorks\\bin\\flowproc"
 	},
 	"Output":{
 		"path":"../output/metadata_writer",
-		"filename":"metadata_filtrd_output"
+		"filename":"metadata_timesliced_output"
 	},
 	"log":{
 		"path":"./log",
-		"filename":"na"
+		"filename":"time_slice_run"
+	},
+	"start":{
+		"path":"D:\\try_area\\PVV_productivity_tools\\source"
 	},
 	"Attributes":[
 		{"name":"ChanTitle"},

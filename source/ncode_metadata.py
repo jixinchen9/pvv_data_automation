@@ -17,7 +17,11 @@ def extract_file_name(file_path):
     
     find_last_slash = r"\\(?!.*\\)"
     last_slash = re.search(find_last_slash,file_path)
-    just_file_name = file_path[last_slash.end():]
+    
+    find_last_period = r"\.(?!.*\.)"
+    last_period = re.search(find_last_period,file_path)
+    
+    just_file_name = file_path[last_slash.end():last_period.start()]
     
     return just_file_name
 

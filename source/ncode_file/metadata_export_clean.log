@@ -1186,3 +1186,234 @@ Program 0 [WS1] - 2 steps...
 Program 0 OK
 
 Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:40 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:42 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:44 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:45 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:47 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:49 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:51 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:53 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:55 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:57 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
+
+--------------------------------------------------------------------------------
+
+Program: flowproc V23.1 A01 Jul 11 2023
+Started: 13:24:58 15-Sep-2025
+
+Flowproc
+
+Command Line: /flow=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo /script=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.script /verbose=yes /batlog=d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.log
+
+nCode (R) Flow Processor Version 1.20
+Copyright (C) Hottinger Bruel & Kjaer UK Ltd 2025. All rights reserved
+
+Processing flow file d:\try_area\PVV_productivity_tools\source\ncode_file\metadata_export_clean.flo - all programs
+Glyph 'WS1.TSInput1' successfully processed the command 'ClearFiles'
+Glyph 'WS1.TSInput1' successfully processed the command 'AddFiles'
+
+Program 0 [WS1] - 2 steps...
+Program 0 OK
+
+Ran 1 program 
