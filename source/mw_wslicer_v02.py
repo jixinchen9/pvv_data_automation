@@ -19,6 +19,7 @@ import gather_input
 import log_writer
 import run_libsie
 import config_builder
+import time_slice_define
 '''
 reconfigure original metadata writer to be easy input, and work in a remote folder
 
@@ -30,8 +31,12 @@ files, folders = gather_input.gather_group_clean()
 
 sie_files, files_not_found = file_finder.get_full_paths(files, folders)
 
+global_export_obj_list = []
+
+run_libsie.clear_temps()
 run_libsie.write_temps(sie_files)
 
+time_slice_df = time_slice_define.get_all_timeslice()
 '''
 
 #find all the generated metadata files in the folder abs paths

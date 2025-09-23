@@ -18,10 +18,21 @@ def extract_file_name(file_path):
     find_last_slash = r"\\(?!.*\\)"
     last_slash = re.search(find_last_slash,file_path)
     
+    find_last_linux_slash = r"\/(?!.*\/)"
+    last_linux_slash = re.search(find_last_linux_slash,file_path)
+    
     find_last_period = r"\.(?!.*\.)"
     last_period = re.search(find_last_period,file_path)
     
-    just_file_name = file_path[last_slash.end():last_period.start()]
+    if last_slash and last_period:
+        just_file_name = file_path[last_slash.end():last_period.start()]
+        
+    elif last_linux_slash and last_period:
+        just_file_name = file_path[last_linux_slash.end():last_period.start()]
+        
+    else: 
+        print("name extraction problem")
+        just_file_name = file_path
     
     return just_file_name
 
@@ -103,7 +114,7 @@ def filter_metadata_df(metadata_list, folder, filename):
     return filtered_df
 
 '''
-obsoleted by df adoption
+<< everything under here obsoleted by df adoption >>
 '''
 
 def filter_metadata(metadata_list, folder, filename):

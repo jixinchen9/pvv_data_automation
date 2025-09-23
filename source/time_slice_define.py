@@ -8,12 +8,53 @@ Created on Fri Sep 19 14:22:20 2025
 import config_builder
 import pandas as pd
 import gather_input
+import regex as re
+
+def get_all_timeslice():
+    slice_files = gather_input.get_timeslice_file_path()
+    all_slices = pd.DataFrame(columns=['run_string', 'slice'])
+    
+    for file in slice_files:
+        new_slice_df = get_timeslice_df(file)
+        all_slices = pd.concat([all_slices , new_slice_df])
+    
+    all_slices['time_slice_start'] = all_slices['slice'].apply(get_timeslice_start)
+    all_slices['time_slice_end'] = all_slices['slice'].apply(get_timeslice_end)
+    
+    all_slices.index = range(len(all_slices))
+    
+    return all_slices
+'''
+helper functions to turn scraped string type times slice into integer 
+'''
+def get_timeslice_start(slice_str):
+    dash = re.search(r"-" , slice_str)
+    
+    if dash:
+        return int(slice_str[:dash.start()])
+    
+    else:
+        return -1
+    
+def get_timeslice_end(slice_str):
+    dash = re.search(r"-" , slice_str)
+    
+    if dash:
+        return int(slice_str[dash.end():])
+    
+    else:
+        return -1
+'''
+the heavy lifting of the time slice scrape
+
+makes use of hint strings that can be defined in the config, currently you have to add the 
+word 'time_slice' into the row that the slices are in in the labview xls
+the test labels happen to be in the row 'CAC', these are configurable in the json file
 
 
-
-
-def get_timeslice_df():
-    summary_df = pd.read_excel(gather_input.get_timeslice_file_path()[0], sheet_name='Master Summary')
+'''
+def get_timeslice_df(slice_file_path):
+    summary_df = pd.read_excel(slice_file_path, sheet_name='Master Summary')
 
     file_xls_row = config_builder.config_v2_inst.timeslice_file_hint
     slice_xls_row = config_builder.config_v2_inst.timeslice_time_hint
@@ -34,4 +75,3 @@ def get_timeslice_df():
     
     return timeslice_df
 
-df = get_timeslice_df()

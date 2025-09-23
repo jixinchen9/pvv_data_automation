@@ -197,11 +197,11 @@ def get_timeslice_file_path():
         data_contents = f.readlines()
         
         for line in data_contents:
-            if "timeslice_full_path_start" in line:
+            if "timeslice_start" in line:
                 collect_line = True
                 continue
             
-            if "timeslice_full_path_end" in line:
+            if "timeslice_end" in line:
                 collect_line = False
             
             if collect_line:

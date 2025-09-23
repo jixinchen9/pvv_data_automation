@@ -13,7 +13,8 @@
 		"filename":"WabcoProductionExhaust Tube.xls",
 		"option":1,
 		"helper_test":"CAC",
-		"helper_slice":"time_slice"
+		"helper_slice":"time_slice",
+		"minimum_match":5
 	},
 	"ncode":{
 		"path":"./ncode_file",

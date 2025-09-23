@@ -45,7 +45,8 @@ config_v2_inst = script_config("v2",
                                source_cwd = os.getcwd(),
                                timeslice_selection = config['timeslice']['option'],
                                timeslice_file_hint = config['timeslice']['helper_test'],
-                               timeslice_time_hint = config['timeslice']['helper_slice']
+                               timeslice_time_hint = config['timeslice']['helper_slice'],
+                               timeslice_min_match = config['timeslice']['minimum_match']
                                #source_cwd = config['start']['path']
 )
 
