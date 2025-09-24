@@ -2,15 +2,13 @@
 """
 Created on Wed Sep 10 10:45:26 2025
 
-Main script to gather metadata from batch of sie files
-
 @author: jc16287
 """
 
 import regex as re
 import pandas as pd
 import csv
-# import os
+import os
 # import json
 
 import file_finder
@@ -19,26 +17,27 @@ import ncode_metadata
 import run_ncode
 import gather_input
 import log_writer
+import run_libsie
+import config_builder
+import time_slice_define
 '''
 reconfigure original metadata writer to be easy input, and work in a remote folder
 
 '''
-#this is the only way to write inputs, by reading the config file
-config_filename = "../config/config.json"
+os.chdir(config_builder.config_v2_inst.source_cwd)
+print(os.getcwd())
 
-siefile_folder_dep, filter_folder, filter_filename, batfile_folder, batfile_filename, batscript_filename, output_name, fields_to_collect, output_folder, ncode_app_path = gather_input.read_config_metadata(config_filename)
-
-#temporary magic path take note
-data_input = "../input/metadata_writer/Data_Automation_Benchmark_Data.csv"
-
-files, folders = gather_input.gather_group(data_input)
+files, folders = gather_input.gather_group_clean()
 
 sie_files, files_not_found = file_finder.get_full_paths(files, folders)
 
-#make changes to the batch script file to include all sie files
-#hit the batch file to create metadata files
+global_export_obj_list = []
 
-run_ncode.edit_script(batfile_folder, batscript_filename, batfile_filename, sie_files)
+run_libsie.clear_temps()
+run_libsie.write_temps(sie_files)
+
+time_slice_df = time_slice_define.get_all_timeslice()
+'''
 
 #find all the generated metadata files in the folder abs paths
 metadata_paths, metadata_files = file_finder.find_meta_files_multifolder(folders)
@@ -58,3 +57,4 @@ wide_df.to_csv(path_or_buf = output_folder + "/" + output_name+".csv")
 
 #save logging file
 log_writer.save_log(log_writer.metadata_v01_log.content, output_folder)
+'''

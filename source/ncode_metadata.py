@@ -47,6 +47,7 @@ def read_metadata_df(files ,desired_columns):
     metadata_df = pd.DataFrame(columns=['Filename','ChanTitle','Attribute','value'])
     
     quote_searcher = r'\"(.*?)\"'
+    # i know.. this function really should be 2 for better readability.
     
     for file in files:
         print(f"Scraping all metadata channels from: {file}")
@@ -98,6 +99,8 @@ reads filter spreadsheet and filters the tall df
 '''
 def filter_metadata_df(metadata_list, folder, filename):
     filtered_channels=[]
+    
+    #opportunity here to use new way to gather channel filter 
     with open(folder + "/" + filename, newline = '') as f:
         f_reader = csv.reader(f)
         

@@ -30,7 +30,7 @@ def create_log():
 def create_log_entry(input_item, created_log):
     
     current_time = datetime.now()
-    created_log.append(f"{current_time}: metadata_v01 action")
+    created_log.append(f"\n{current_time}::\n")
     
     if isinstance(input_item, list):
         for i in input_item:

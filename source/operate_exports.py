@@ -8,10 +8,12 @@ import sie_obj
 import ncode_metadata
 import config_builder
 import time_slice_define
+import gather_input
+import scrape_export
+
 
 import os
 import regex as re
-
 
 def create_export_objs():
 
@@ -25,18 +27,13 @@ def create_export_objs():
         
     return export_obj_list
 
-
-
 def make_set(input_str):
+    
     word_list = re.split(r"[;,_\\ ]+" , input_str)
     lowercase_list = [item.lower() for item in word_list]
     word_set = set(lowercase_list)
     
     return word_set
-
-
-time_slice_df = time_slice_define.get_all_timeslice()
-
 
 def get_match_metric(export_name , slice_name):
     
@@ -44,7 +41,7 @@ def get_match_metric(export_name , slice_name):
     
     return match_metric
 
-def get_slice_ends(obj_file_name):
+def get_slice_ends(obj_file_name, time_slice_df):
     #compare word sets for each entry in time slice 
 
     find_slice_match_df = time_slice_df.copy(deep = True)
@@ -61,7 +58,7 @@ def get_slice_ends(obj_file_name):
         match_slice_start = find_slice_match_df.loc[slice_match, 'time_slice_start']
         match_slice_end = find_slice_match_df.loc[slice_match, 'time_slice_end']
     
-        print(f"\n matched '{obj_file_name}' with '{match_name}' in labview summary with {highest_metric} words" )
+        print(f"\n matched '{obj_file_name}' temp file with '{match_name}' in labview summary with {highest_metric} words" )
     
     else:
         print("could not match enough words, edit config if you think it's a good idea")
@@ -70,12 +67,20 @@ def get_slice_ends(obj_file_name):
         
     return match_slice_start, match_slice_end
     # finally fill in the time slice attributes in the object from the df highest match entry
+'''
+local test
+
+
+time_slice_df = time_slice_define.get_all_timeslice()
 
 export_objs = create_export_objs()
 
+chan_list = gather_input.get_filter_channels()
+
 for export in export_objs:
-    export.time_slice_start , export.time_slice_end = get_slice_ends(export.file_name)
-'''
+    export.time_slice_start , export.time_slice_end = get_slice_ends(export.file_name , time_slice_df)
+    export.ts_data = scrape_export.add_timeseries_df(export, chan_list)
+
 obj_file_name = create_export_objs()[0].file_name
 
 

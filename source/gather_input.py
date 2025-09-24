@@ -11,6 +11,27 @@ import os
 import log_writer
 import config_builder
 
+def general_scrape(all_lines, start_str , end_str):
+    scrape_result = []
+    gather_subseq = False
+    
+    for line in all_lines:
+        
+        if start_str in line:
+            gather_subseq = True
+            continue
+        
+        if end_str in line:
+            gather_subseq = False
+            break
+        
+        #this will only capture one group of lines between start str and end str
+        
+        if gather_subseq:
+            scrape_result.append(line.rstrip('\n'))
+        
+    return scrape_result
+
 def read_config_metadata(filename):
     
     abs_filename = os.path.abspath(filename) 
@@ -140,6 +161,7 @@ def gather_group_clean():
     
     input_file = config_builder.config_v2_inst.input_path + "/" + config_builder.config_v2_inst.input_data
     
+    #i know, the general scrape thing should be applied here
     with open(input_file) as f:
         data_contents = f.readlines()
         
@@ -190,12 +212,12 @@ def gather_group_clean():
 def get_timeslice_file_path():
     
     input_file = config_builder.config_v2_inst.input_path + "/" + config_builder.config_v2_inst.input_data
-    collect_line = False
+    #collect_line = False
     search_result = []
     
     with open(input_file) as f:
         data_contents = f.readlines()
-        
+        '''
         for line in data_contents:
             if "timeslice_start" in line:
                 collect_line = True
@@ -206,7 +228,20 @@ def get_timeslice_file_path():
             
             if collect_line:
                 search_result.append(line.rstrip('\n'))
-        
+        '''
+        search_result = general_scrape(data_contents, "timeslice_start", "timeslice_end")
         f.close()
     
+    return search_result
+
+def get_filter_channels():
+    
+    input_file = config_builder.config_v2_inst.filter_folder + "/" + config_builder.config_v2_inst.filter_filename
+    search_result = []
+    
+    with open(input_file) as f:
+        data_contents = f.readlines()
+        search_result = general_scrape(data_contents, "channels_start", "channels_end")
+    f.close()
+
     return search_result

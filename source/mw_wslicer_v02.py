@@ -14,12 +14,13 @@ import os
 import file_finder
 import def_output
 import ncode_metadata
-import run_ncode
 import gather_input
 import log_writer
 import run_libsie
 import config_builder
 import time_slice_define
+import operate_exports
+import scrape_export
 '''
 reconfigure original metadata writer to be easy input, and work in a remote folder
 
@@ -31,12 +32,18 @@ files, folders = gather_input.gather_group_clean()
 
 sie_files, files_not_found = file_finder.get_full_paths(files, folders)
 
-global_export_obj_list = []
-
 run_libsie.clear_temps()
 run_libsie.write_temps(sie_files)
 
 time_slice_df = time_slice_define.get_all_timeslice()
+
+export_objs = operate_exports.create_export_objs()
+
+chan_list = gather_input.get_filter_channels()
+
+for export in export_objs:
+    export.time_slice_start , export.time_slice_end = operate_exports.get_slice_ends(export.file_name , time_slice_df)
+    export.ts_data = scrape_export.add_timeseries_df(export, chan_list)
 '''
 
 #find all the generated metadata files in the folder abs paths

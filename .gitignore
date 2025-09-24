@@ -4,6 +4,7 @@ input/*meta*
 temp/
 #ignore generated log files
 log/
+*run_log2*
 #what next
 #pycache
 __pycache__/
