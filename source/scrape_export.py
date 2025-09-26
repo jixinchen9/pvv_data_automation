@@ -17,7 +17,7 @@ for a single export obj:
     
 '''
 def make_channel_df(ts_list, channel_name, file_name):
-    
+    #should be able to fully nest
     new_df = pd.DataFrame(columns=['time_stamp' , 'measure_value', 'measure_name' , 'file_name'])
 
     for datapoint in ts_list:

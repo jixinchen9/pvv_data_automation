@@ -9,14 +9,22 @@ import config_builder
 import pandas as pd
 import gather_input
 import regex as re
+import os 
+
 
 def get_all_timeslice():
     slice_files = gather_input.get_timeslice_file_path()
     all_slices = pd.DataFrame(columns=['run_string', 'slice'])
     
     for file in slice_files:
-        new_slice_df = get_timeslice_df(file)
-        all_slices = pd.concat([all_slices , new_slice_df])
+        if os.path.exists(file):
+            print(f"slice inputs found in {file}")
+            new_slice_df = get_timeslice_df(file)
+            all_slices = pd.concat([all_slices , new_slice_df])
+            
+        else:
+            config_builder.config_v2_inst.timeslice_selection = 0
+            print("slice input not found, time series data will not slice")
     
     all_slices['time_slice_start'] = all_slices['slice'].apply(get_timeslice_start)
     all_slices['time_slice_end'] = all_slices['slice'].apply(get_timeslice_end)
@@ -54,6 +62,7 @@ the test labels happen to be in the row 'CAC', these are configurable in the jso
 
 '''
 def get_timeslice_df(slice_file_path):
+    
     summary_df = pd.read_excel(slice_file_path, sheet_name='Master Summary')
 
     file_xls_row = config_builder.config_v2_inst.timeslice_file_hint
@@ -62,6 +71,8 @@ def get_timeslice_df(slice_file_path):
 
     summary_df['file_srch'] = summary_df['Project'].str.find(file_xls_row)
     summary_df['slice_srch'] = summary_df['Project'].str.find(slice_xls_row)
+    
+    #if there are nothing except -1 in the new slice srch column, then this funciton should terminate, time slice option should set to zero
              
     timeslice_df = (summary_df.loc[(summary_df['file_srch'] == 0)|(summary_df['slice_srch'] == 0)]).transpose()
 

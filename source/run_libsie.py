@@ -10,6 +10,7 @@ import os
 import subprocess
 import config_builder
 import operate_exports
+import log_writer
 
 def clear_temps():
     temp_list = os.listdir(config_builder.config_v2_inst.temp_path)
@@ -19,7 +20,10 @@ def clear_temps():
         
         if os.path.exists(full_path):
             os.remove(full_path)
-            print(f"{file} was deleted !!")
+            
+            talk1 = f"{file} was deleted !!\n"
+            print(talk1)
+            log_writer.create_log_entry(talk1, log_writer.metadata_v01_log.content)
             
         else:
             print(f"{file} not found ??")
@@ -34,6 +38,8 @@ def write_temps(input_file_list):
         os.chdir(os.path.abspath(config_builder.config_v2_inst.libsie_path))
         os.system(batfile_abs)
         os.chdir(source_abs)
+        
+        
 
     
 def edit_script(input_file_name):
@@ -56,12 +62,16 @@ def edit_script(input_file_name):
         output_file_end_idx = next(filename_match).start()
     
     else:
-        print("problem defining input of libsie batch script")
+        error1 = "problem defining input of libsie batch script, check libsie batch script"
+        print(error1)
+        log_writer.create_log_entry(error1, log_writer.metadata_v01_log.content)
     
     
     temp_output_name =config_builder.config_v2_inst.temp_path  + "/" + ncode_metadata.extract_file_name(repr(input_file_name)) +"export.csv"
-    print(f"writing temp file: {temp_output_name}\n")
     
+    talk1 = f"writing temp file: {temp_output_name}\n"
+    print(talk1)
+    log_writer.create_log_entry(talk1, log_writer.metadata_v01_log.content)
     
     with open(batch_file_abs_path, "w") as f:
         

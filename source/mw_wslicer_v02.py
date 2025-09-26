@@ -32,18 +32,32 @@ files, folders = gather_input.gather_group_clean()
 
 sie_files, files_not_found = file_finder.get_full_paths(files, folders)
 
+#run the libsie exe to generate temp files
 run_libsie.clear_temps()
 run_libsie.write_temps(sie_files)
 
 time_slice_df = time_slice_define.get_all_timeslice()
+#need more error handling if time slice file is not found
+#need more error handling if hint string isnt entered
 
 export_objs = operate_exports.create_export_objs()
 
 chan_list = gather_input.get_filter_channels()
 
+tall_result = def_output.make_empty_result_df()
+
 for export in export_objs:
-    export.time_slice_start , export.time_slice_end = operate_exports.get_slice_ends(export.file_name , time_slice_df)
-    export.ts_data = scrape_export.add_timeseries_df(export, chan_list)
+    
+    if config_builder.config_v2_inst.timeslice_selection:
+        export.time_slice_start , export.time_slice_end = operate_exports.get_slice_ends(export.file_name , time_slice_df)
+        
+    export.set_ts_data(scrape_export.add_timeseries_df(export, chan_list))
+    tall_result = pd.merge(tall_result , def_output.calc_aggs(export), how='outer')
+
+#write the csv
+tall_result.to_csv(path_or_buf = config_builder.config_v2_inst.output_path + "/" + config_builder.config_v2_inst.output_name+".csv")
+
+
 '''
 
 #find all the generated metadata files in the folder abs paths

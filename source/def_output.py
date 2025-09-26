@@ -6,12 +6,88 @@ Created on Thu Feb 13 13:58:13 2025
 """
 
 import csv
-
+import pandas as pd
 '''
 #takes in a dict which is one entry in list of dicts, and a list which indicates what to output
 #outputs list which will become a row of output csv
 '''
 
+
+def make_empty_result_df():
+    result_columns= ['file_name' 
+                     , 'measure_value'
+                     , 'measure_name' 
+                     , 'time_slice_start'
+                     , 'time_slice_end'
+                     , 'agg_type']
+    df = pd.DataFrame(columns = result_columns)
+    return df
+
+def calc_aggs(export):
+            
+    tall_df = make_empty_result_df()
+    file_ts_df = export.get_ts_data()
+    
+    test_channels = file_ts_df['measure_name'].unique()
+    
+    for channel in test_channels:
+        
+        def add_min(df):
+            
+            new_row = {'file_name' : export.file_name
+                             , 'measure_value' : df['measure_value'].min()
+                             , 'measure_name' : channel
+                             , 'time_slice_start' : export.time_slice_start
+                             , 'time_slice_end' : export.time_slice_end
+                             , 'agg_type': "min"} 
+            
+            return new_row
+        
+        def add_max(df):
+            
+            new_row = {'file_name' : export.file_name
+                             , 'measure_value' : df['measure_value'].max()
+                             , 'measure_name' : channel
+                             , 'time_slice_start' : export.time_slice_start
+                             , 'time_slice_end' : export.time_slice_end
+                             , 'agg_type': "max"} 
+            
+            return new_row
+        
+        def add_mean(df):
+            
+            new_row = {'file_name' : export.file_name
+                             , 'measure_value' : df['measure_value'].mean()
+                             , 'measure_name' : channel
+                             , 'time_slice_start' : export.time_slice_start
+                             , 'time_slice_end' : export.time_slice_end
+                             , 'agg_type': "mean"} 
+            
+            return new_row
+        
+        def add_stdev(df):
+            
+            new_row = {'file_name' : export.file_name
+                             , 'measure_value' : df['measure_value'].std()
+                             , 'measure_name' : channel
+                             , 'time_slice_start' : export.time_slice_start
+                             , 'time_slice_end' : export.time_slice_end
+                             , 'agg_type': "st dev"} 
+            
+            return new_row
+        
+        current_channel_df = file_ts_df[file_ts_df['measure_name'] == channel ]
+        
+    
+        tall_df.loc[len(tall_df)] = add_min(current_channel_df)
+        tall_df.loc[len(tall_df)] = add_max(current_channel_df)
+        tall_df.loc[len(tall_df)] = add_mean(current_channel_df)
+        tall_df.loc[len(tall_df)] = add_stdev(current_channel_df)
+        
+        talk1 = f"writing aggregate values for {channel} in {export.file_name}\n"
+        print(talk1)
+    
+    return tall_df
 def row_for_csv(metadata_dict, fields):
     ordered_row = []
     for attribute in fields:

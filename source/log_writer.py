@@ -18,7 +18,7 @@ create module level instance, which is effectively a singleton instance
 '''
 
 current_time = datetime.now()
-metadata_v01_log = run_log([f"{current_time}: Begin execution of ncode based script"])
+metadata_v01_log = run_log([f"{current_time}: executing...\n"])
 
 def create_log():
     log_content = []
