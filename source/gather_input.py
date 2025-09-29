@@ -217,18 +217,7 @@ def get_timeslice_file_path():
     
     with open(input_file) as f:
         data_contents = f.readlines()
-        '''
-        for line in data_contents:
-            if "timeslice_start" in line:
-                collect_line = True
-                continue
-            
-            if "timeslice_end" in line:
-                collect_line = False
-            
-            if collect_line:
-                search_result.append(line.rstrip('\n'))
-        '''
+
         search_result = general_scrape(data_contents, "timeslice_start", "timeslice_end")
         f.close()
     
@@ -243,5 +232,12 @@ def get_filter_channels():
         data_contents = f.readlines()
         search_result = general_scrape(data_contents, "channels_start", "channels_end")
     f.close()
-
+    
+    talk1 = "searching for these channels in exported sie files:\n"
+    print(talk1)
+    print(*search_result , sep='\n')
+    
+    log_writer.create_log_entry(talk1, log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(search_result , log_writer.metadata_v01_log.content)
+    
     return search_result

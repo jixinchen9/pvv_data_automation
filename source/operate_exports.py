@@ -10,7 +10,7 @@ import config_builder
 import time_slice_define
 import gather_input
 import scrape_export
-
+import log_writer
 
 import os
 import regex as re
@@ -57,13 +57,18 @@ def get_slice_ends(obj_file_name, time_slice_df):
         match_name = find_slice_match_df.loc[slice_match, 'run_string']
         match_slice_start = find_slice_match_df.loc[slice_match, 'time_slice_start']
         match_slice_end = find_slice_match_df.loc[slice_match, 'time_slice_end']
-    
-        print(f"\n matched '{obj_file_name}' temp file with '{match_name}' in labview summary with {highest_metric} words" )
+        
+        talk1 = f"\n matched '{obj_file_name}' temp file with '{match_name}' in labview summary with {highest_metric} words \n"
+        print(talk1)
+        log_writer.create_log_entry(talk1, log_writer.metadata_v01_log.content)
     
     else:
-        print("could not match enough words, edit config if you think it's a good idea")
         match_slice_start = -1
         match_slice_end = -1
+        
+        error1 = r"could not match enough words, edit config if you think it's a good idea \n"
+        print(error1)
+        log_writer.create_log_entry(error1, log_writer.metadata_v01_log.content)
         
     return match_slice_start, match_slice_end
     # finally fill in the time slice attributes in the object from the df highest match entry

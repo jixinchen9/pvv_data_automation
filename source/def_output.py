@@ -7,6 +7,7 @@ Created on Thu Feb 13 13:58:13 2025
 
 import csv
 import pandas as pd
+import log_writer
 '''
 #takes in a dict which is one entry in list of dicts, and a list which indicates what to output
 #outputs list which will become a row of output csv
@@ -86,7 +87,8 @@ def calc_aggs(export):
         
         talk1 = f"writing aggregate values for {channel} in {export.file_name}\n"
         print(talk1)
-    
+        log_writer.create_log_entry(talk1, log_writer.metadata_v01_log.content)
+        
     return tall_df
 def row_for_csv(metadata_dict, fields):
     ordered_row = []

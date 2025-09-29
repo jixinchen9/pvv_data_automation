@@ -37,8 +37,6 @@ run_libsie.clear_temps()
 run_libsie.write_temps(sie_files)
 
 time_slice_df = time_slice_define.get_all_timeslice()
-#need more error handling if time slice file is not found
-#need more error handling if hint string isnt entered
 
 export_objs = operate_exports.create_export_objs()
 
@@ -57,6 +55,8 @@ for export in export_objs:
 #write the csv
 tall_result.to_csv(path_or_buf = config_builder.config_v2_inst.output_path + "/" + config_builder.config_v2_inst.output_name+".csv")
 
+#save logging file
+log_writer.save_log_clean()
 
 '''
 
@@ -76,6 +76,5 @@ wide_df = pd.pivot(short_df, index='ChanTitle', columns = ['Filename','Attribute
 #write the csv
 wide_df.to_csv(path_or_buf = output_folder + "/" + output_name+".csv")
 
-#save logging file
-log_writer.save_log(log_writer.metadata_v01_log.content, output_folder)
+
 '''

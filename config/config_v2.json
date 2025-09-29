@@ -36,7 +36,7 @@
 		"filename":"metadata_timesliced_output"
 	},
 	"log":{
-		"path":"./log",
+		"path":"../log",
 		"filename":"time_slice_run"
 	},
 	"start":{
