@@ -9,9 +9,7 @@
 		"filename":"Channel_list_v02.csv"
 	},
 	"timeslice":{
-		"path":"\\fhxnas02\\pdcteams\\combine\\Power Module\\PV&V\\Lab\\Windtunnel\\Tier 4 Final\\Mercury_13.6L-S750 & 9.0L\\04 Labview\\Mercury 13.6L Application Approval\\LPB FT4 Yinlun\\A-108308_A-154687",
-		"filename":"WabcoProductionExhaust Tube.xls",
-		"option":1,
+		"option":0,
 		"helper_test":"CAC",
 		"helper_slice":"time_slice",
 		"minimum_match":5
@@ -38,6 +36,9 @@
 	"log":{
 		"path":"../log",
 		"filename":"time_slice_run"
+	},
+	"helper":{
+		"path":"../output/helper_files"
 	},
 	"start":{
 		"path":"D:\\try_area\\PVV_productivity_tools\\source"

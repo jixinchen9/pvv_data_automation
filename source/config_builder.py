@@ -35,8 +35,8 @@ config_v2_inst = script_config("v2",
                                output_name = config['Output']['filename'],
                                output_path = config['Output']['path'],
                                ncode_app_path = config['ncode_app']['path'],
-                               timeslice_path = config['timeslice']['path'],
-                               timeslice_file = config['timeslice']['filename'],
+                               #timeslice_path = config['timeslice']['path'],
+                               #timeslice_file = config['timeslice']['filename'],
                                libsie_path = config['libsie']['path'],
                                libsie_bat = config['libsie']['batfile'],
                                temp_path = config['temp']['path'],
@@ -46,7 +46,8 @@ config_v2_inst = script_config("v2",
                                timeslice_selection = config['timeslice']['option'],
                                timeslice_file_hint = config['timeslice']['helper_test'],
                                timeslice_time_hint = config['timeslice']['helper_slice'],
-                               timeslice_min_match = config['timeslice']['minimum_match']
+                               timeslice_min_match = config['timeslice']['minimum_match'],
+                               helperfile_path = config['helper']['path']
                                #source_cwd = config['start']['path']
 )
 
