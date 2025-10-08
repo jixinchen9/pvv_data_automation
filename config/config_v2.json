@@ -9,7 +9,7 @@
 		"filename":"Channel_list_v02.csv"
 	},
 	"timeslice":{
-		"option":0,
+		"option":1,
 		"helper_test":"CAC",
 		"helper_slice":"time_slice",
 		"minimum_match":5

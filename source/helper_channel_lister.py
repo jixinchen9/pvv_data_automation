@@ -40,6 +40,9 @@ time_slice_df = time_slice_define.get_all_timeslice()
 
 export_objs = operate_exports.create_export_objs()
 
+
+
+'''
 chan_list = gather_input.get_filter_channels()
 
 tall_result = def_output.make_empty_result_df()
@@ -57,24 +60,4 @@ tall_result.to_csv(path_or_buf = config_builder.config_v2_inst.output_path + "/"
 
 #save logging file
 log_writer.save_log_clean()
-
-'''
-
-#find all the generated metadata files in the folder abs paths
-metadata_paths, metadata_files = file_finder.find_meta_files_multifolder(folders)
-
-#run regex search on metadata files for collected attributes and place into appropriate data structure
-full_df_tall = ncode_metadata.read_metadata_df(metadata_paths, fields_to_collect)
-
-#optionally filter the full list wrt channels
-short_df = ncode_metadata.filter_metadata_df(full_df_tall, filter_folder, filter_filename)
-
-#pivot the full list or filtered wrt to channels list to a 'wide' table, flattened
-#based on filename
-wide_df = pd.pivot(short_df, index='ChanTitle', columns = ['Filename','Attribute'], values = 'value')
-
-#write the csv
-wide_df.to_csv(path_or_buf = output_folder + "/" + output_name+".csv")
-
-
 '''
