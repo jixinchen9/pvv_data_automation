@@ -24,11 +24,13 @@ import scrape_export
 '''
 reconfigure original metadata writer to be easy input, and work in a remote folder
 
+and now w time slicing!
+
 '''
 os.chdir(config_builder.config_v2_inst.source_cwd)
 print(os.getcwd())
 
-files, folders = gather_input.gather_group_clean()
+files, folders = gather_input.file_folder_helper()
 
 sie_files, files_not_found = file_finder.get_full_paths(files, folders)
 
@@ -48,6 +50,10 @@ for export in export_objs:
     
     if config_builder.config_v2_inst.timeslice_selection:
         export.time_slice_start , export.time_slice_end = operate_exports.get_slice_ends(export.file_name , time_slice_df)
+    else:
+        talk4 = "time slicing optioned off, see config\n"
+        print(talk4)
+        log_writer.create_log_entry(talk4, log_writer.metadata_v01_log.content)
         
     export.set_ts_data(scrape_export.add_timeseries_df(export, chan_list))
     tall_result = pd.merge(tall_result , def_output.calc_aggs(export), how='outer')

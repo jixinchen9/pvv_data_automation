@@ -11,6 +11,19 @@ import os
 import log_writer
 import config_builder
 
+def file_folder_helper():
+
+    input_file = config_builder.config_v2_inst.input_path + "/" + config_builder.config_v2_inst.input_data
+    
+    with open(input_file) as f:
+        input_lines = f.readlines()
+        f.close()
+    
+    files = general_scrape(input_lines, "group_1_file_start","group_1_file_end")
+    folders = general_scrape(input_lines, "group_1_path_start","group_1_path_end")
+    
+    return files, folders
+
 def general_scrape(all_lines, start_str , end_str):
     scrape_result = []
     gather_subseq = False
@@ -25,9 +38,9 @@ def general_scrape(all_lines, start_str , end_str):
             gather_subseq = False
             break
         
-        #this will only capture one group of lines between start str and end str
+        #this will only capture one group of lines between start str and end str, it will ignore empty lines
         
-        if gather_subseq:
+        if gather_subseq and not (line.strip() == ''):
             scrape_result.append(line.rstrip('\n'))
         
     return scrape_result

@@ -43,7 +43,13 @@ def get_match_metric(export_name , slice_name):
 
 def get_slice_ends(obj_file_name, time_slice_df):
     #compare word sets for each entry in time slice 
-
+    if time_slice_df.empty:
+        error2 = "empty timeslice search result, check file path input or hint strings.\n"
+        print(error2)
+        log_writer.create_log_entry(error2, log_writer.metadata_v01_log.content)
+        
+        return -1,-1
+    
     find_slice_match_df = time_slice_df.copy(deep = True)
     find_slice_match_df['match_metric'] = find_slice_match_df['run_string'].apply(get_match_metric, args =(obj_file_name,))
     #store a match quantity for each entry

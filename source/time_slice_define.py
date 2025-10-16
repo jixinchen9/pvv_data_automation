@@ -19,7 +19,7 @@ def get_all_timeslice():
     for file in slice_files:
         if os.path.exists(file):
             
-            talk1 = f"slice inputs file found here: {file}\n"
+            talk1 = f"A slice inputs file found here: {file}\n"
             print(talk1)
             log_writer.create_log_entry(talk1, log_writer.metadata_v01_log.content)
             
@@ -28,22 +28,31 @@ def get_all_timeslice():
             
             
         else:
-            config_builder.config_v2_inst.timeslice_selection = 0
+            new_slice_df = pd.DataFrame(columns=['run_string', 'slice'])
             
-            talk2 = "slice input file not found, time series data will not slice\n"
+            
+            talk2 = f"A slice input file not found, will ignore {file}\n"
             print(talk2)
             log_writer.create_log_entry(talk2, log_writer.metadata_v01_log.content)
     
-    all_slices['time_slice_start'] = all_slices['slice'].apply(get_timeslice_start)
-    all_slices['time_slice_end'] = all_slices['slice'].apply(get_timeslice_end)
     
-    all_slices.index = range(len(all_slices))
-    
-    log_list = all_slices.to_numpy().flatten()
-    talk3 = "time slice scrape complete:\n"
-    print(talk3)
-    log_writer.create_log_entry(talk3, log_writer.metadata_v01_log.content)
-    log_writer.create_log_entry(log_list, log_writer.metadata_v01_log.content)
+    if not all_slices.empty:
+        
+        all_slices['time_slice_start'] = all_slices['slice'].apply(get_timeslice_start)
+        all_slices['time_slice_end'] = all_slices['slice'].apply(get_timeslice_end)
+        
+        all_slices.index = range(len(all_slices))
+        
+        log_list = all_slices.to_numpy().flatten()
+        talk3 = "time slice scrape complete:\n"
+        print(talk3)
+        log_writer.create_log_entry(talk3, log_writer.metadata_v01_log.content)
+        log_writer.create_log_entry(log_list, log_writer.metadata_v01_log.content)
+        
+    else:
+        talk4 = "time slice scrape found nothing\n"
+        print(talk4)
+        log_writer.create_log_entry(talk4, log_writer.metadata_v01_log.content)
     
     return all_slices
 '''
@@ -109,7 +118,7 @@ def get_timeslice_df(slice_file_path):
         return timeslice_df
     
     else:
-        config_builder.config_v2_inst.timeslice_selection = 0
+        #config_builder.config_v2_inst.timeslice_selection = 0
         
         error1 = f"problem in {slice_file_path}\n One or both Hint String do not match, check summary file and script config\n"
         print(error1)
