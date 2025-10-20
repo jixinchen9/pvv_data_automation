@@ -6,13 +6,13 @@
 	},
 	"Filter":{
 		"path":"../input/metadata_writer",
-		"filename":"Channel_list_v02.csv"
+		"filename":"Data_Automation_Benchmark_Data_w_timeslice.csv"
 	},
 	"timeslice":{
 		"option":1,
 		"helper_test":"CAC",
 		"helper_slice":"time_slice",
-		"minimum_match":7
+		"minimum_match":10
 	},
 	"ncode":{
 		"path":"./ncode_file",
