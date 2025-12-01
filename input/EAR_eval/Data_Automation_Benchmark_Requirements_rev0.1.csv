@@ -1,5 +1,0 @@
-﻿Requirement_Number,Requirement_Name,Requirement_value,Requirement_operator,data_measure,Requirement_Limit_Units,Requirement_Source,Lab_Channel_1,Lab_Channel_2,Lab_Channel_3,hint,Requirement_Equation,data_group
-C1.2.b,Maximum Temperature Rise – Compressor Inlet Temperature Sensor to Compressor Inlet,1.5,<=,max,C,JDPS Application_Requirements,"Compressor In Temp, fixed",Compressor Inlet Temp,,Labview,Lab_Channel_1 - Lab_Channel_2,1
-C1.4.,Maximum Pressure Drop - Compressor Inlet Pressure Sensor to Compressor Inlet,0.9,<,mean,kPa,JDPS Application_Requirements,Atmospheric pressure,Compressor Inlet Air Pressure,Air Filter Restriction,Labview,abs(Lab_Channel_1-(Lab_Channel_2+Lab_Channel_3)),1
-C1.6.a,Maximum Air Intake Restriction with Clean Filter,3.3,<=,mean,kPa,JDPS Application_Requirements,PressureDropAcrossAirFilterSensor,,,devx, = PressureDropAcrossAirFilterSensor,1
-11.3,Hot Air Recirculation,8,<=,mean,C,HXE184149_Mercury_PM_Requirements.docx,Compressor Inlet Temp,Package Inlet Temp ,,Labview, = CompressorInletAirTemperature - Package Inlet Temp,1

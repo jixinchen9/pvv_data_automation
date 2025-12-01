@@ -47,7 +47,14 @@ config_v2_inst = script_config("v2",
                                timeslice_file_hint = config['timeslice']['helper_test'],
                                timeslice_time_hint = config['timeslice']['helper_slice'],
                                timeslice_min_match = config['timeslice']['minimum_match'],
-                               helperfile_path = config['helper']['path']
+                               req_path = config['requirement']['path'],
+                               req_file = config['requirement']['filename'],
+                               req_name_index = config['requirement']['name_idx'],
+                               req_limit_index = config['requirement']['limit_idx'],
+                               req_compare_index = config['requirement']['compare_idx'],
+                               req_metadata_type_index = config['requirement']['metadata_type_idx'],
+                               req_formula_index = config['requirement']['formula_idx'],
+                               req_channels_index = config['requirement']['channels_idx']
                                #source_cwd = config['start']['path']
 )
 

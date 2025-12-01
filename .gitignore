@@ -7,3 +7,6 @@ input/*meta*
 #what next
 #pycache
 __pycache__/
+
+#ignore virtual environments
+**/venv/

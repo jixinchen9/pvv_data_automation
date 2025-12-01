@@ -37,11 +37,18 @@
 		"path":"../log",
 		"filename":"time_slice_run"
 	},
-	"helper":{
-		"path":"../output/helper_files"
-	},
 	"start":{
 		"path":"D:\\try_area\\PVV_productivity_tools\\source"
+	},
+	"requirement":{
+		"path":"../input/metadata_writer",
+		"filename":"Data_Automation_Benchmark_Requirements_test_survey.csv",
+		"name_idx":0,
+		"limit_idx":2,
+		"compare_idx":3,
+		"metadata_type_idx":4,
+		"formula_idx":8,
+		"channels_idx":10
 	},
 	"Attributes":[
 		{"name":"ChanTitle"},

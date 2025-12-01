@@ -11,6 +11,17 @@ import os
 import log_writer
 import config_builder
 
+def get_requirements():
+    
+    with open(config_builder.config_v2_inst.req_path + "/" + config_builder.config_v2_inst.req_file) as f:
+        all_lines = f.readlines();
+        f.close()
+        
+    req_lines = general_scrape(all_lines, "Requirement_start", "Requirement_end")
+    req_lists = [line.split(",") for line in req_lines]
+    
+    return req_lists
+
 def file_folder_helper():
 
     input_file = config_builder.config_v2_inst.input_path + "/" + config_builder.config_v2_inst.input_data

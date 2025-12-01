@@ -36,9 +36,7 @@ A brief description of your project and what it does.
 
 - edit the path of python install in the main_metadata_writer.bat, should be the same one you updated modules in.
     alternatively, add the path of both the python bundled with windows and a full featured python install to the path variable in 'edit environment variables', making sure the full featured python precedes the windows one in the path variable list. 
-- this shouldn't be a problem if you have a full feaured install: make sure you have the correct python modules, as of this writing you may need to install regex and pandas. 
-    i recommend: opening a command prompt in folder with python.exe of the python intallation you intend to use; type 'python -m pip install regex', repeat as needed.
-    will look into deployment using a venv.
+- The process is developed inside a python virtual environment, but relies on only a few libraries, regex, pandas, and xlrd at time of this writing; a requirements document is provided to generate venv should dependency issues arise in the future; for most purposes it will be ok to run script with generic python 3.12 interpreter, which you will have mapped to.
 - relevant only to v1: it is easiest to just regenerate the ncode batch file and script by opening the flo file and adding a file to the input, this will update the install location of ncode so the ncode batch script can run
     simply open flo file in ncode and 'save for batch file'
 - now you can simply run the batch file for the python script from command prompt or by double clicking.
