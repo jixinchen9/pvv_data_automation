@@ -10,6 +10,10 @@ gives list of .sie files given a folder path string
 '''
 import os
 import log_writer
+import gather_input
+import config_builder
+
+from pathlib import Path
 
 def find_sie(folder):
     
@@ -64,6 +68,61 @@ def find_meta_files_multifolder(folder_list):
     
     return all_metadata_paths, all_metadata_files
 
+
+
+def case_insensitive_search(needle_list, haystack_list):
+    result_list = []
+    found_counter = []
+    
+    for i in needle_list:
+        for j in haystack_list:
+            
+            if i.lower() in j.lower():
+                result_list.append(j)
+                found_counter.append(i)
+                break
+                
+    return result_list, found_counter
+
+      
+def classify_file_paths(path_list):
+    '''
+    Parameters
+    ----------
+    path_list : list of all files found in the folders
+
+    Returns 2 lists in this inplementation, one list of sie paths, one of devx paths
+    -------
+    None.
+
+    '''
+    devx_path_hint = config_builder.config_v2_inst.devx_path_hint
+    sie_path_hint = config_builder.config_v2_inst.libsie_path_hint
+
+    sie_files = []
+    devx_files = []
+    for file_path in path_list:
+        
+        path_obj = Path(file_path)
+        path_parts = path_obj.parts
+        
+        lowercase_parts = [item.lower() for item in path_parts]
+        
+        if any(devx_path_hint in item for item in lowercase_parts):
+            devx_files.append(file_path)
+            talk1 = f"{file_path} is a devx file"
+            print(talk1)
+                
+        elif any(sie_path_hint in item for item in lowercase_parts):
+            sie_files.append(file_path)
+            talk2 = f"{file_path} is a sie file"
+            print(talk2)
+        else:
+            talk3 = f"file type undefined for {file_path}"
+            print(talk3)
+            
+    return list(set(sie_files)), list(set(devx_files))
+
 '''
 given a list of file name queries and list of files, searches all folder for all queries
 
@@ -84,24 +143,19 @@ def get_full_paths(file_list, folder_list):
         
     not_found_files = list(set(file_list) - set(matched_files_query))
     
-    log_writer.create_log_entry("found these files", log_writer.metadata_v01_log.content)
-    log_writer.create_log_entry(full_path_list, log_writer.metadata_v01_log.content)
+    sie_files, devx_files = classify_file_paths(full_path_list)
+    
+    log_writer.create_log_entry("found these sie files", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(sie_files, log_writer.metadata_v01_log.content)
+    
+    log_writer.create_log_entry("found these devx files", log_writer.metadata_v01_log.content)
+    log_writer.create_log_entry(devx_files, log_writer.metadata_v01_log.content)
     
     log_writer.create_log_entry("the following file names were not found:", log_writer.metadata_v01_log.content)
     log_writer.create_log_entry(not_found_files, log_writer.metadata_v01_log.content)
 
-    return full_path_list, not_found_files, 
-
-def case_insensitive_search(needle_list, haystack_list):
-    result_list = []
-    found_counter = []
-    
-    for i in needle_list:
-        for j in haystack_list:
-            
-            if i.lower() in j.lower():
-                result_list.append(j)
-                found_counter.append(i)
-                break
-                
-    return result_list, found_counter
+    return sie_files, devx_files, not_found_files
+        
+        
+        
+        

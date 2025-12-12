@@ -32,7 +32,7 @@ print(os.getcwd())
 
 files, folders = gather_input.file_folder_helper()
 
-sie_files, files_not_found = file_finder.get_full_paths(files, folders)
+sie_files, devx_files, files_not_found = file_finder.get_full_paths(files, folders)
 
 #run the libsie exe to generate temp files
 run_libsie.clear_temps()
@@ -40,7 +40,8 @@ run_libsie.write_temps(sie_files)
 
 time_slice_df = time_slice_define.get_all_timeslice()
 
-export_objs = operate_exports.create_export_objs()
+#export_objs = operate_exports.create_export_objs()
+export_objs = operate_exports.create_data_objs(operate_exports.make_sie_exp_list())
 
 chan_list = gather_input.get_filter_channels()
 

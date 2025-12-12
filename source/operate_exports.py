@@ -16,7 +16,14 @@ import os
 import regex as re
 
 def create_export_objs():
+    '''
 
+    Returns
+    -------
+    export_obj_list : TYPE
+        deprecated#.
+
+    '''
     export_obj_list = []
     
     temp_file_list = os.listdir(config_builder.config_v2_inst.temp_path)
@@ -27,6 +34,27 @@ def create_export_objs():
         
     return export_obj_list
 
+def make_sie_exp_list():
+    export_list = os.listdir(config_builder.config_v2_inst.temp_path)
+    file_path_list = []
+    
+    for file in export_list:
+        file_path = config_builder.config_v2_inst.temp_path + "/" + file
+        file_path_list.append(file_path)
+    
+    return file_path_list
+
+def create_data_objs(data_path_list):
+    
+    export_obj_list = []
+    
+        
+    for file in data_path_list:
+        exp_folder , exp_filename = os.path.split(file)
+        export_obj_list.append(sie_obj.sie_export(file, exp_filename))
+    
+    return export_obj_list
+            
 def make_set(input_str):
     
     word_list = re.split(r"[;,_\\ ]+" , input_str)

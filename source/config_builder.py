@@ -39,6 +39,7 @@ config_v2_inst = script_config("v2",
                                #timeslice_file = config['timeslice']['filename'],
                                libsie_path = config['libsie']['path'],
                                libsie_bat = config['libsie']['batfile'],
+                               libsie_path_hint = config['libsie']['path_hint'],
                                temp_path = config['temp']['path'],
                                log_path = config['log']['path'],
                                log_name = config['log']['filename'],
@@ -54,7 +55,9 @@ config_v2_inst = script_config("v2",
                                req_compare_index = config['requirement']['compare_idx'],
                                req_metadata_type_index = config['requirement']['metadata_type_idx'],
                                req_formula_index = config['requirement']['formula_idx'],
-                               req_channels_index = config['requirement']['channels_idx']
+                               req_channels_index = config['requirement']['channels_idx'],
+                               devx_trim_hint = config['devx']['trim_hint'],
+                               devx_path_hint = config['devx']['path_hint']
                                #source_cwd = config['start']['path']
 )
 

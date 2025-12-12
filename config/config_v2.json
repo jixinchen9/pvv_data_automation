@@ -21,7 +21,8 @@
 	},
 	"libsie":{
 		"path":"./x64",
-		"batfile":"output_temp.bat"
+		"batfile":"output_temp.bat",
+		"path_hint":"edaq"
 	},
 	"temp":{
 		"path":"../temp"
@@ -49,6 +50,10 @@
 		"metadata_type_idx":4,
 		"formula_idx":8,
 		"channels_idx":10
+	},
+	"devx":{
+		"trim_hint":"Time",
+		"path_hint":"devx"
 	},
 	"Attributes":[
 		{"name":"ChanTitle"},

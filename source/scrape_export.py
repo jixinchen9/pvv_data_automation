@@ -60,11 +60,11 @@ def add_timeseries_df(exp_obj, channel_list):
                 ts_list = gather_input.general_scrape(all_lines[index:], "Data block 0", "Channel id")
                 time_series_df = pd.merge(time_series_df, make_channel_df(ts_list, channel, exp_obj.file_name), how='outer' )
                 
-                talk1 = f"found {channel} in {exp_obj.file_name}"
+                talk1 = f"found {channel} in sie export {exp_obj.file_name}"
                 print(talk1)
                 log_writer.create_log_entry(talk1 , log_writer.metadata_v01_log.content)
     
-    talk2 = f"channel gathering complete in {exp_obj.file_name}"    
+    talk2 = f"channel gathering complete in sie export {exp_obj.file_name}"    
     print(talk2)
     log_writer.create_log_entry(talk2 , log_writer.metadata_v01_log.content)
     

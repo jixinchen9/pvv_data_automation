@@ -10,3 +10,8 @@ __pycache__/
 
 #ignore virtual environments
 **/venv/
+
+#ignore any generated temp vsc from sie
+
+temp/**
+!temp/*/

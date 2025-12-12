@@ -257,7 +257,7 @@ def get_filter_channels():
         search_result = general_scrape(data_contents, "channels_start", "channels_end")
     f.close()
     
-    talk1 = "searching for these channels in exported sie files:\n"
+    talk1 = "searching for these channels in exported sie files and devx files:\n"
     print(talk1)
     print(*search_result , sep='\n')
     
