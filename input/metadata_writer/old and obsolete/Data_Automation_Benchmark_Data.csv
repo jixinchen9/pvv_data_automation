@@ -1,0 +1,32 @@
+﻿Benchmark Vision activity = A-109084
+group_1_path_start
+\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\03 eDaq\Mercury 13.6L Application Approval\LPB FT4 Yinlun
+group_1_path_end
+eDaq Data files
+DevX Data files
+
+
+"Test files (runs) to use for this data analysis, "
+group_1_file_start
+1_Mercury_WT_13.6_LPB_FT4_YINLUN_InitialFill_Dearation_
+1.1_Mercury_WT_13.6_LPB_FT4_YINLUN_InitialFill_Dearation
+2_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_405kw_29C
+3_Mercury_WT_13.6_LPB_FT4_YINLUN_PP_405KW_29C
+4_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_29C
+5_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_353kw_29C
+6_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_353kw_29C
+7_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_405kw_47C
+8_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_1900RPM_405kw_47C
+9_Mercury_WT_13.6_LPB_FT4_YINLUN_PP_405kw_47C
+10_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_47C
+16_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_113C_405kw_47C
+16_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_95C_405kw_47C
+LPB_FT4_Yinlun_Master.xls
+group_1_file_end
+
+ref_start
+\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\05 Results\Mercury 13.6L Application Approval\LPB FT4 Yinlun\LPB FT4SV Yinlun - Air Intake System Req_C.pptx
+\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\04 Labview\Mercury 13.6L Application Approval\LPB FT4 Yinlun\LPB_FT4_Yinlun_Master.xls
+ref_end
+Results PPT/Additional details for A-109084
+Results XLS for A-109084

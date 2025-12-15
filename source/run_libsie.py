@@ -67,7 +67,7 @@ def edit_script(input_file_name):
         log_writer.create_log_entry(error1, log_writer.metadata_v01_log.content)
     
     
-    temp_output_name =config_builder.config_v2_inst.temp_path  + "/" + ncode_metadata.extract_file_name(repr(input_file_name)) +"export.csv"
+    temp_output_name =config_builder.config_v2_inst.temp_path  + "/" + ncode_metadata.extract_file_name(repr(input_file_name)) +"_edaq_export.csv"
     
     talk1 = f"writing temp file: {temp_output_name}\n"
     print(talk1)

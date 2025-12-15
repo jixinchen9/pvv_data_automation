@@ -7,13 +7,13 @@ Created on Wed Sep 10 10:45:26 2025
 
 import regex as re
 import pandas as pd
-import csv
+#import csv
 import os
 # import json
 
 import file_finder
 import def_output
-import ncode_metadata
+#import ncode_metadata
 import gather_input
 import log_writer
 import run_libsie
@@ -21,6 +21,7 @@ import config_builder
 import time_slice_define
 import operate_exports
 import scrape_export
+import operate_devx
 '''
 reconfigure original metadata writer to be easy input, and work in a remote folder
 
@@ -41,7 +42,7 @@ run_libsie.write_temps(sie_files)
 time_slice_df = time_slice_define.get_all_timeslice()
 
 #export_objs = operate_exports.create_export_objs()
-export_objs = operate_exports.create_data_objs(operate_exports.make_sie_exp_list())
+export_objs = operate_exports.create_data_objs(operate_exports.make_sie_exp_list()) + operate_exports.create_data_objs(devx_files)
 
 chan_list = gather_input.get_filter_channels()
 
@@ -56,7 +57,23 @@ for export in export_objs:
         print(talk4)
         log_writer.create_log_entry(talk4, log_writer.metadata_v01_log.content)
         
-    export.set_ts_data(scrape_export.add_timeseries_df(export, chan_list))
+    
+    if file_finder.is_sie(export.file_path):
+        
+        export.set_ts_data(scrape_export.add_timeseries_df(export, chan_list))
+        print(f"{export.file_path} is an sie export.\n") 
+    
+    elif file_finder.is_devx(export.file_path):
+        
+        all_devx_ts_df  =   operate_devx.make_df_all(export.file_path)
+        devx_desired_df = all_devx_ts_df[all_devx_ts_df['measure_name'].isin(chan_list)].reset_index(drop=True)
+        
+        export.set_ts_data(devx_desired_df)
+        print(f"{export.file_path} is an devx file.\n")
+   
+    else:
+        print(f"{export.file_path} is neither devx file nor sie export, no operations possible.\n")
+
     tall_result = pd.merge(tall_result , def_output.calc_aggs(export), how='outer')
 
 #write the csv

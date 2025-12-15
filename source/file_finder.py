@@ -84,7 +84,65 @@ def case_insensitive_search(needle_list, haystack_list):
                 
     return result_list, found_counter
 
-      
+def is_devx(file_path):
+    
+    devx_path_hint = config_builder.config_v2_inst.devx_path_hint
+    
+    path_obj = Path(file_path)
+    path_parts = path_obj.parts
+    
+    lowercase_parts = [item.lower() for item in path_parts]
+    
+    if any(devx_path_hint in item for item in lowercase_parts):
+        return True
+    else:
+        return False
+    
+def is_sie(file_path):
+    
+    sie_path_hint = config_builder.config_v2_inst.libsie_path_hint
+    
+    path_obj = Path(file_path)
+    path_parts = path_obj.parts
+    
+    lowercase_parts = [item.lower() for item in path_parts]
+    
+    if any(sie_path_hint in item for item in lowercase_parts):
+        return True
+    else:
+        return False
+
+def separate_file_paths(path_list):
+    '''
+    Parameters
+    ----------
+    path_list : list of all files found in the folders
+
+    Returns 2 lists in this inplementation, one list of sie paths, one of devx paths
+    -------
+    None.
+
+    '''
+    sie_files = []
+    devx_files = []
+    
+    for file_path in path_list:
+        
+        if is_devx(file_path):
+            devx_files.append(file_path)
+            talk1 = f"{file_path} is a devx file"
+            print(talk1)
+                
+        elif is_sie(file_path):
+            sie_files.append(file_path)
+            talk2 = f"{file_path} is a sie file"
+            print(talk2)
+        else:
+            talk3 = f"file type undefined for {file_path}"
+            print(talk3)
+            
+    return list(set(sie_files)), list(set(devx_files))
+
 def classify_file_paths(path_list):
     '''
     Parameters
@@ -143,7 +201,7 @@ def get_full_paths(file_list, folder_list):
         
     not_found_files = list(set(file_list) - set(matched_files_query))
     
-    sie_files, devx_files = classify_file_paths(full_path_list)
+    sie_files, devx_files = separate_file_paths(full_path_list)
     
     log_writer.create_log_entry("found these sie files", log_writer.metadata_v01_log.content)
     log_writer.create_log_entry(sie_files, log_writer.metadata_v01_log.content)

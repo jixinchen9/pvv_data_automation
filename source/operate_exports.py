@@ -11,9 +11,12 @@ import time_slice_define
 import gather_input
 import scrape_export
 import log_writer
+import file_finder
+import operate_devx
 
 import os
 import regex as re
+from pathlib import Path
 
 def create_export_objs():
     '''
@@ -48,12 +51,15 @@ def create_data_objs(data_path_list):
     
     export_obj_list = []
     
-        
-    for file in data_path_list:
-        exp_folder , exp_filename = os.path.split(file)
-        export_obj_list.append(sie_obj.sie_export(file, exp_filename))
+    if not data_path_list:
+        return export_obj_list
     
-    return export_obj_list
+    else:
+        for file in data_path_list:
+            exp_folder , exp_filename = os.path.split(file)
+            export_obj_list.append(sie_obj.sie_export(file, exp_filename))
+        
+        return export_obj_list
             
 def make_set(input_str):
     
@@ -106,9 +112,44 @@ def get_slice_ends(obj_file_name, time_slice_df):
         
     return match_slice_start, match_slice_end
     # finally fill in the time slice attributes in the object from the df highest match entry
-'''
-local test
 
+'''
+local test(s)
+'''
+
+'''
+files, folders = gather_input.file_folder_helper()
+
+sie_files, devx_files, files_not_found = file_finder.get_full_paths(files, folders)
+
+time_slice_df = time_slice_define.get_all_timeslice()
+
+chan_list = gather_input.get_filter_channels()
+
+export_objs = create_data_objs(make_sie_exp_list()) + create_data_objs(devx_files)
+
+for export in export_objs:
+    export.time_slice_start , export.time_slice_end = get_slice_ends(export.file_name , time_slice_df)
+    
+    if file_finder.is_sie(export.file_path):
+        sie_df = scrape_export.add_timeseries_df(export, chan_list)
+        export.set_ts_data(scrape_export.add_timeseries_df(export, chan_list))
+        print(f"{export.file_path} is an sie export.\n")
+
+    elif file_finder.is_devx(export.file_path):
+        
+        all_devx_ts_df  =   operate_devx.make_df_all(export.file_path)
+        devx_desired_df = all_devx_ts_df[all_devx_ts_df['measure_name'].isin(chan_list)].reset_index(drop=True)
+        
+        export.set_ts_data(devx_desired_df)
+        print(f"{export.file_path} is an devx file.\n")
+   
+    else:
+        print(f"{export.file_path} is neither devx file nor sie export, no operations possible.\n")
+
+'''
+
+'''
 
 time_slice_df = time_slice_define.get_all_timeslice()
 

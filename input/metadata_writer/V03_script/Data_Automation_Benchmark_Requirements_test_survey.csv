@@ -1,0 +1,7 @@
+﻿"Input form for EAR requirements, this form is indexed with the config file, don’t move columns around without updating config. Multiple channel inputs can be input at right of row ad infinitum",,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Requirement_Number,Requirement_Description,Requirement_value,Requirement_operator,data_measure,Requirement_Limit_Units,Requirement_Source,hint,Requirement_Equation,data_group,Channel_1,Channel_2,Channel_3,,
+Requirement_start,,,,,,,,,,,,,,
+5.4.1,Exhaust System Surface Temp,200,<=,max,C,HXE184149_Mercury_PM_Requirements.docx,edaq,OR,1,AT_TC_5,AT_TC_14,AT_TC_13,AT_TC_18,AT_TC_20
+Requirement_end,,,,,,,,,,,,,,

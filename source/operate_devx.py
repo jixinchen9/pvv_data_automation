@@ -69,6 +69,7 @@ def make_df_all (devx_file):
         
         return pd.DataFrame(columns = common_df_order)      
         #return empties if first row identification did not work
+        
     devx_df = pd.read_csv(devx_file , skiprows = trim_index)
 
     df_columns_all = devx_df.columns.tolist()
@@ -82,11 +83,19 @@ def make_df_all (devx_file):
 
     devx_df_tall['file_name'] = devx_filename
 
+    talk2 = f"\n Devx data collected from: *{devx_filename}*\n"
+    print(talk2)
+    log_writer.create_log_entry(talk2 , log_writer.metadata_v01_log.content)
     
     return devx_df_tall[common_df_order]
-    
+
+'''
+local test
+'''
+'''    
 all_devx_ts_df  =   make_df_all(content[0])
 
 channel_desired = gather_input.get_filter_channels()
 
 devx_desired_df = all_devx_ts_df[all_devx_ts_df['measure_name'].isin(channel_desired)]
+'''

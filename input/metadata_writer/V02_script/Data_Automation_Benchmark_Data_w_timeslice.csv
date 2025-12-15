@@ -1,0 +1,53 @@
+"Input form for metadata writer v02, metadata with time slice ability; use guard strings to define your input, entries outside of the strings will be ignored"
+
+SPECIFY FOLDER TO SEARCH FOR FILES
+group_1_path_start
+\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\03 eDaq\Mercury 13.6L Application Approval\LPB FT4 Yinlun\Production Exhaust Tube (Two Piece) Wabco Application A-108308 and A-154687
+\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\02 DevX\Mercury 13.6L Application Approval\LPB FT4 Yinlun\Production Exhaust Tube (Two Piece) Wabco Application A-108308 and A-154687
+group_1_path_end
+
+SPECIFY TEST RUNS OR SIE FILES TO BE USED FOR ANALYSIS
+group_1_file_start
+Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25
+Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25
+Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25
+Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25
+Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25
+
+Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25
+Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25
+
+5_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_353kw_29C
+6_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_353kw_29C
+7_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_405kw_47C
+8_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_1900RPM_405kw_47C
+9_Mercury_WT_13.6_LPB_FT4_YINLUN_PP_405kw_47C
+10_Mercury_WT_13.6_LPB_FT4_YINLUN_BOOST_405kw_47C
+16_Mercury_WT_13.6_LPB_FT4_YINLUN_FLRS_113C_405kw_47C
+fast_and_furious.mov
+LPB_FT4_Yinlun_Master.xls
+group_1_file_end
+
+SPECIFY FULL FILE PATH OF TIME SLICE INPUT (typically a labview summary)
+timeslice_start
+\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\04 Labview\Mercury 13.6L Application Approval\LPB FT4 Yinlun\10mmHeaterCoreSupply11mmAuxCoolantSupply\11.01_11.16_10mmHeaterCoreSupply11mmAuxSupply.xls
+\\fhxnas02\pdcteams\combine\Power Module\PV&V\Lab\Windtunnel\Tier 4 Final\Mercury_13.6L-S750 & 9.0L\04 Labview\Mercury 13.6L Application Approval\LPB FT4 Yinlun\A-108308_A-154687\for_jc_demo\WabcoProductionExhaust Tube.xls
+timeslice_end
+
+INPUT DESIRED CHANNELS BELOW
+channels_start
+V_EngBrkTorU
+AT_ExThCondt
+SpdEngine
+AT_TC_5
+
+AT_TC_13
+AT_TC_18
+AT_TC_20
+AcceleratedDOCInletTemperature
+PercentLoadAtCurrentSpeed
+channels_end
+
+
+notes:
+"You can put whatever you want outside of guard strings, notes, limericks, salad dressing recipes etc"

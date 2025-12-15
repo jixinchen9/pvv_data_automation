@@ -1,5 +1,4 @@
 # ignore any generated metadata files
-input/*meta*
 
 #ignore generated log files
 

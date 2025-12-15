@@ -19,7 +19,7 @@ class script_config:
         for key, value in config_field.items():
             setattr(self, key, value)
           
-with open("../config/config_v2.json") as f:
+with open("../config/V02/config_v2.json") as f:
     config = json.load(f)
     f.close()
 

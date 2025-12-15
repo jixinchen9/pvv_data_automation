@@ -35,10 +35,11 @@ A brief description of your project and what it does.
 ## Setup
 
 - edit the path of python install in the main_metadata_writer.bat, should be the same one you updated modules in.
-    alternatively, add the path of both the python bundled with windows and a full featured python install to the path variable in 'edit environment variables', making sure the full featured python precedes the windows one in the path variable list. 
-- The process is developed inside a python virtual environment, but relies on only a few libraries, regex, pandas, and xlrd at time of this writing; a requirements document is provided to generate venv should dependency issues arise in the future; for most purposes it will be ok to run script with generic python 3.12 interpreter, which you will have mapped to.
+    alternatively, add the path of both the python bundled with windows and a full featured python install to the PATH variable in 'edit environment variables', making sure the full featured python precedes the windows one in the path variable list. 
+- adding the install of python to PATH variable will allow you to install any packages that are missing from you python install: "python -m pip install \<module name\>". 'xlrd' may a module you install in this manner.
 - relevant only to v1: it is easiest to just regenerate the ncode batch file and script by opening the flo file and adding a file to the input, this will update the install location of ncode so the ncode batch script can run
     simply open flo file in ncode and 'save for batch file'
+- The process is developed inside a python virtual environment, but relies on only a few libraries, regex, pandas, and xlrd at time of this writing; a requirements document is provided to generate venv should dependency issues arise in the future; for most purposes it will be ok to run script with generic python 3.12 interpreter, which you will have mapped to.
 - now you can simply run the batch file for the python script from command prompt or by double clicking.
     
 
@@ -56,37 +57,39 @@ A brief description of your project and what it does.
 ## The config file explained
 - metadata writer v02 uses config_v2;
 - input
-* path: folder where input forms are
-* data: the name of input form for config writer v2, you can copy the form, rename it, and update it here and the script will use it to run the process
-* requirement: carry over from earlier development, this input form would hold specific EAR requirements
+    * path: folder where input forms are
+    * data: the name of input form for config writer v2, you can copy the form, rename it, and update it here and the script will use it to run the process
+    * requirement: carry over from earlier development, this input form would hold specific EAR requirements
 - Filter
-* path: folder where channel name list input form is 
-* filename: name of channel name list input form 
+    * path: folder where channel name list input form is 
+    * filename: name of channel name list input form 
 - timeslice
-* option: you can opt out of applying steady state time slices to time series data altogether by entering '0' here, any non-zero entry enables time slice processing
-* helper_test: this helps the script scrape the labview summary for time slices, this is the entry in the excel sheet in the first column of the row holding all the test run names, happens to be "CAC" in most labview summaries
-* helper_slice: same idea as above, except this time it's to help find the row with time slice start and end 
-* minimum_match: test names in the labview summary and test names in the input files are not always identical, they are matched to each other based on how many words appear in both strings, script selects the maximum match for each input file from the time slice scrape, minimum match is to prevent the script from assigning matches from a completely unrelated summary sheet if the user has made an input error: if match number is less than the number here, time slice will not be updated with data from lv summary.
+    * option: you can opt out of applying steady state time slices to time series data altogether by entering '0' here, any non-zero entry enables time slice processing
+    * helper_test: this helps the script scrape the labview summary for time slices, this is the entry in the excel sheet in the first column of the row holding all the test run names, happens to be "CAC" in most labview summaries. This can be thought of as a 'magic' parameter.
+    * helper_slice: same idea as above, except this time it's to help find the row with time slice start and end, as mentioned previously, this one should be added to the labview summary.
+    * minimum_match: test names in the labview summary and test names in the input files are not always identical, they are matched to each other based on how many words appear in both strings, script selects the maximum match for each input file from the time slice scrape, minimum match is to prevent the script from assigning matches from a completely unrelated summary sheet if the user has made an input error: if match number is less than the number here, time slice will not be updated with data from lv summary.
 - ncode
-* path: v1 config field to point to where the ncode batch and script files for metadata export were stored
-* batfile: name of batch file for ncode based automation
-* batch_script: batch script for  ncode based automation
+    * path: v1 config field to point to where the ncode batch and script files for metadata export were stored
+    * batfile: name of batch file for ncode based automation
+    * batch_script: batch script for  ncode based automation
 - libsie
-* path: path to where batchfile that calls libsie demo exe is, this is how sie is converted to csv for python to process
-* batfile: name of batch file 
+    * path: path to where batchfile that calls libsie demo exe is, this is how sie is converted to csv for python to process
+    * batfile: name of batch file 
+    * path_hint: this helps the script distinguish devx files from sie files or sie exports, because file paths for sie files always have the work 'Edaq' in them, it's for this same reason 'edaq_export' is suffixed to the temp file outputs.
 -temp
-* path: folder where the csv exports made by libsie are stored
+    * path: folder where the csv exports made by libsie are stored
 - ncode_app
-* path: streamline setup for v1, not implemented
+    * path: streamline setup for v1, not implemented
 - output
-* path: folder where output files like the summary tables of the entire process are stored
-* filename: you can specify a name for your output here
+    * path: folder where output files like the summary tables of the entire process are stored
+    * filename: you can specify a name for your output here
 - log
-* path: folder where logs will be output
-* filename: you can specify a name for the log files
+    * path: folder where logs will be output
+    * filename: you can specify a name for the log files
 - helper
-* path: folder where helper files are stored, like a planned channel lister, not yet inplemented
-- start
-* path: this script does a lot of cwd switching which can create errors, the process uses this to return to the source file folder which is the default cwd, it is also what the relative paths are based on
+    * path: folder where helper files are stored, like a planned channel lister, not yet inplemented
+- Devx
+    * trim_hint: this helps the script find the first line of dex data, devx writes a wide table of data organized into columns by channel after varying lines of machine information, the hint string is the first channel name ("Time") in the channel row. like the earlier time slice hints, this can be thought of as another 'magic' parameter.
+    * path_hint: this helps the script distinguish devx files from sie files or sie exports, devx file network file paths always have the word 'devx' in the file path
 - Attributes
-* name: metadatawriter v1 used this to scrape the ncode generated metadata exports, you basically used this to choose what stats to export, not used any more
+    * name: metadatawriter v1 used this to scrape the ncode generated metadata exports, you basically used this to choose what stats to export, not used any more
