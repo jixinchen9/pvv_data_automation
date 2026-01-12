@@ -7,13 +7,13 @@ Created on Wed Sep 10 10:45:26 2025
 
 import regex as re
 import pandas as pd
-import csv
+#import csv
 import os
 # import json
 
 import file_finder
 import def_output
-import ncode_metadata
+#import ncode_metadata
 import gather_input
 import log_writer
 import run_libsie
@@ -21,10 +21,12 @@ import config_builder
 import time_slice_define
 import operate_exports
 import scrape_export
+import operate_devx
+import operate_requirement
 '''
 reconfigure original metadata writer to be easy input, and work in a remote folder
 
-and now w time slicing!
+and now w time slicing and support for devx files!
 
 '''
 os.chdir(config_builder.config_v2_inst.source_cwd)
@@ -32,7 +34,9 @@ print(os.getcwd())
 
 files, folders = gather_input.file_folder_helper()
 
-sie_files, files_not_found = file_finder.get_full_paths(files, folders)
+sie_files, devx_files, files_not_found = file_finder.get_full_paths(files, folders)
+
+req_obj_list = operate_requirement.create_req_objs()
 
 #run the libsie exe to generate temp files
 run_libsie.clear_temps()
@@ -40,7 +44,8 @@ run_libsie.write_temps(sie_files)
 
 time_slice_df = time_slice_define.get_all_timeslice()
 
-export_objs = operate_exports.create_export_objs()
+#export_objs = operate_exports.create_export_objs()
+export_objs = operate_exports.create_data_objs(operate_exports.make_sie_exp_list()) + operate_exports.create_data_objs(devx_files)
 
 chan_list = gather_input.get_filter_channels()
 
@@ -55,8 +60,29 @@ for export in export_objs:
         print(talk4)
         log_writer.create_log_entry(talk4, log_writer.metadata_v01_log.content)
         
-    export.set_ts_data(scrape_export.add_timeseries_df(export, chan_list))
+    
+    if file_finder.is_sie(export.file_path):
+        
+        export.set_ts_data(scrape_export.add_timeseries_df(export, chan_list))
+        print(f"{export.file_path} is an sie export.\n") 
+    
+    elif file_finder.is_devx(export.file_path):
+        
+        all_devx_ts_df  =   operate_devx.make_df_all(export.file_path)
+        devx_desired_df = all_devx_ts_df[all_devx_ts_df['measure_name'].isin(chan_list)].reset_index(drop=True)
+        
+        export.set_ts_data(devx_desired_df)
+        print(f"{export.file_path} is an devx file.\n")
+   
+    else:
+        print(f"{export.file_path} is neither devx file nor sie export, no operations possible.\n")
+
     tall_result = pd.merge(tall_result , def_output.calc_aggs(export), how='outer')
+
+for req_obj in req_obj_list:
+    tall_result[f"{req_obj.name}"] = tall_result.apply(operate_requirement.set_req_result , 
+                                                       axis = 1,  
+                                                       requirement=req_obj)
 
 #write the csv
 tall_result.to_csv(path_or_buf = config_builder.config_v2_inst.output_path + "/" + config_builder.config_v2_inst.output_name+".csv")

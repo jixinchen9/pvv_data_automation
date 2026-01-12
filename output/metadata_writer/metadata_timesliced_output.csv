@@ -1,181 +1,181 @@
-,file_name,measure_value,measure_name,time_slice_start,time_slice_end,agg_type
-0,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,0.16417083357188125,AT_ExThCondt,40,280,st dev
-1,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,0.25325757429207835,AT_TC_5,40,280,st dev
-2,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,0.2766623751918213,AT_TC_20,40,280,st dev
-3,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,0.872239200599504,AT_TC_13,40,280,st dev
-4,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,1.6504742906549434,AT_TC_18,40,280,st dev
-5,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,6.233204091547779,SpdEngine,40,280,st dev
-6,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,12.862340356511703,V_EngBrkTorU,40,280,st dev
-7,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,142.116577148438,AT_ExThCondt,40,280,min
-8,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,142.57197741749877,AT_ExThCondt,40,280,mean
-9,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,142.965087890625,AT_ExThCondt,40,280,max
-10,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,158.852813720703,AT_TC_20,40,280,min
-11,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,159.70900121665105,AT_TC_20,40,280,mean
-12,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,160.457382202148,AT_TC_20,40,280,max
-13,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,172.148590087891,AT_TC_5,40,280,min
-14,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,172.95847171767625,AT_TC_5,40,280,mean
-15,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,173.449005126953,AT_TC_5,40,280,max
-16,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,204.264434814453,AT_TC_18,40,280,min
-17,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,208.12912582460783,AT_TC_18,40,280,mean
-18,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,211.541412353516,AT_TC_18,40,280,max
-19,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,227.899490356445,AT_TC_13,40,280,min
-20,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,229.92783118283603,AT_TC_13,40,280,mean
-21,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,231.945892333984,AT_TC_13,40,280,max
-22,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,1782.5,SpdEngine,40,280,min
-23,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,1795.5954356846473,SpdEngine,40,280,mean
-24,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,1807.75,SpdEngine,40,280,max
-25,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,2419.0,V_EngBrkTorU,40,280,min
-26,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,2443.605809128631,V_EngBrkTorU,40,280,mean
-27,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,2470.0,V_EngBrkTorU,40,280,max
-28,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,0.0,PercentLoadAtCurrentSpeed,40,320,st dev
-29,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,0.48219660256409796,AcceleratedDOCInletTemperature,40,320,st dev
-30,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,320,max
-31,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,320,mean
-32,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,320,min
-33,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,475.90375,AcceleratedDOCInletTemperature,40,320,min
-34,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,476.7787505338076,AcceleratedDOCInletTemperature,40,320,mean
-35,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,477.88904,AcceleratedDOCInletTemperature,40,320,max
-36,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,0.1375256071232262,AT_ExThCondt,40,320,st dev
-37,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,0.2378049167686406,AT_TC_5,40,320,st dev
-38,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,0.3177182574025826,AT_TC_20,40,320,st dev
-39,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,0.9151967909430264,AT_TC_18,40,320,st dev
-40,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,1.0431071549423825,AT_TC_13,40,320,st dev
-41,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,4.21145798602731,SpdEngine,40,320,st dev
-42,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,7.728574200744325,V_EngBrkTorU,40,320,st dev
-43,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,137.700668334961,AT_ExThCondt,40,320,min
-44,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,138.01932626092992,AT_ExThCondt,40,320,mean
-45,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,138.301071166992,AT_ExThCondt,40,320,max
-46,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,146.291351318359,AT_TC_20,40,320,min
-47,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,146.97462273322816,AT_TC_20,40,320,mean
-48,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,148.194808959961,AT_TC_20,40,320,max
-49,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,157.636184692383,AT_TC_5,40,320,min
-50,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,158.17332306451226,AT_TC_5,40,320,mean
-51,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,158.831787109375,AT_TC_5,40,320,max
-52,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,186.180252075195,AT_TC_18,40,320,min
-53,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,188.46116632753424,AT_TC_18,40,320,mean
-54,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,191.439498901367,AT_TC_18,40,320,max
-55,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,212.463165283203,AT_TC_13,40,320,min
-56,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,215.66877752012206,AT_TC_13,40,320,mean
-57,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,218.159057617188,AT_TC_13,40,320,max
-58,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,1987.25,SpdEngine,40,320,min
-59,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,1995.0907473309608,SpdEngine,40,320,mean
-60,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,2002.75,SpdEngine,40,320,max
-61,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,2093.0,V_EngBrkTorU,40,320,min
-62,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,2116.8754448398577,V_EngBrkTorU,40,320,mean
-63,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,2131.0,V_EngBrkTorU,40,320,max
-64,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,0.0,PercentLoadAtCurrentSpeed,40,240,st dev
-65,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,0.4675513263867614,AcceleratedDOCInletTemperature,40,240,st dev
-66,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,240,max
-67,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,240,mean
-68,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,240,min
-69,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,462.18555,AcceleratedDOCInletTemperature,40,240,min
-70,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,463.2621953233828,AcceleratedDOCInletTemperature,40,240,mean
-71,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,464.01526,AcceleratedDOCInletTemperature,40,240,max
-72,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,0.16777549760599159,AT_ExThCondt,40,240,st dev
-73,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,0.18725716509269216,AT_TC_20,40,240,st dev
-74,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,0.30000899079914256,AT_TC_5,40,240,st dev
-75,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,0.6729016309739898,AT_TC_13,40,240,st dev
-76,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,1.0176009560024926,AT_TC_18,40,240,st dev
-77,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,4.91340814526842,SpdEngine,40,240,st dev
-78,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,8.176644326238666,V_EngBrkTorU,40,240,st dev
-79,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,128.832778930664,AT_ExThCondt,40,240,min
-80,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,129.23553557894118,AT_ExThCondt,40,240,mean
-81,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,129.587463378906,AT_ExThCondt,40,240,max
-82,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,134.592086791992,AT_TC_20,40,240,min
-83,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,135.09260824782345,AT_TC_20,40,240,mean
-84,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,135.595291137695,AT_TC_20,40,240,max
-85,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,144.482406616211,AT_TC_5,40,240,min
-86,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,145.04989320365948,AT_TC_5,40,240,mean
-87,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,145.657028198242,AT_TC_5,40,240,max
-88,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,164.907806396484,AT_TC_18,40,240,min
-89,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,167.6533468825307,AT_TC_18,40,240,mean
-90,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,170.007461547852,AT_TC_18,40,240,max
-91,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,200.095504760742,AT_TC_13,40,240,min
-92,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,202.13749702415657,AT_TC_13,40,240,mean
-93,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,203.362609863281,AT_TC_13,40,240,max
-94,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,1850.0,V_EngBrkTorU,40,240,min
-95,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,1865.6169154228855,V_EngBrkTorU,40,240,mean
-96,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,1877.0,V_EngBrkTorU,40,240,max
-97,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,1987.0,SpdEngine,40,240,min
-98,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,1995.8942786069651,SpdEngine,40,240,mean
-99,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,2002.75,SpdEngine,40,240,max
-100,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,0.0,PercentLoadAtCurrentSpeed,40,240,st dev
-101,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,0.5772863226269134,AcceleratedDOCInletTemperature,40,240,st dev
-102,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,240,max
-103,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,240,mean
-104,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,240,min
-105,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,455.23166,AcceleratedDOCInletTemperature,40,240,min
-106,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,456.68566358208955,AcceleratedDOCInletTemperature,40,240,mean
-107,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,457.64685,AcceleratedDOCInletTemperature,40,240,max
-108,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,0.11686827084085014,AT_ExThCondt,40,240,st dev
-109,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,0.17608877470131815,AT_TC_20,40,240,st dev
-110,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,0.1910765548440631,AT_TC_5,40,240,st dev
-111,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,0.7515785874528785,AT_TC_13,40,240,st dev
-112,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,0.9902535008990706,AT_TC_18,40,240,st dev
-113,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,2.661072918881027,SpdEngine,40,240,st dev
-114,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,8.900807722305474,V_EngBrkTorU,40,240,st dev
-115,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,145.943878173828,AT_ExThCondt,40,240,min
-116,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,146.22930391985386,AT_ExThCondt,40,240,mean
-117,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,146.565322875977,AT_ExThCondt,40,240,max
-118,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,160.530776977539,AT_TC_20,40,240,min
-119,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,160.85669856284986,AT_TC_20,40,240,mean
-120,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,161.393447875977,AT_TC_20,40,240,max
-121,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,178.290481567383,AT_TC_5,40,240,min
-122,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,178.69059404211853,AT_TC_5,40,240,mean
-123,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,179.177917480469,AT_TC_5,40,240,max
-124,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,194.519973754883,AT_TC_18,40,240,min
-125,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,196.83712449714324,AT_TC_18,40,240,mean
-126,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,199.220291137695,AT_TC_18,40,240,max
-127,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,221.466583251953,AT_TC_13,40,240,min
-128,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,223.07574045361574,AT_TC_13,40,240,mean
-129,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,225.068176269531,AT_TC_13,40,240,max
-130,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,1917.0,V_EngBrkTorU,40,240,min
-131,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,1940.6915422885572,V_EngBrkTorU,40,240,mean
-132,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,1953.0,V_EngBrkTorU,40,240,max
-133,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,1991.5,SpdEngine,40,240,min
-134,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,1996.629353233831,SpdEngine,40,240,mean
-135,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,2004.5,SpdEngine,40,240,max
-136,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,0.0,PercentLoadAtCurrentSpeed,40,260,st dev
-137,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,0.17593086134216182,AcceleratedDOCInletTemperature,40,260,st dev
-138,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,100.0,PercentLoadAtCurrentSpeed,40,260,max
-139,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,100.0,PercentLoadAtCurrentSpeed,40,260,mean
-140,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,100.0,PercentLoadAtCurrentSpeed,40,260,min
-141,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,467.76022,AcceleratedDOCInletTemperature,40,260,min
-142,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,468.15297990909096,AcceleratedDOCInletTemperature,40,260,mean
-143,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,468.6231,AcceleratedDOCInletTemperature,40,260,max
-144,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,0.18313597631777057,AT_ExThCondt,40,260,st dev
-145,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,0.2406353718352822,AT_TC_5,40,260,st dev
-146,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,0.2820840403609828,AT_TC_20,40,260,st dev
-147,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,1.056754848979628,AT_TC_13,40,260,st dev
-148,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,1.311894423676728,AT_TC_18,40,260,st dev
-149,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,2.4608644969599993,SpdEngine,40,260,st dev
-150,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,4.845948491597572,V_EngBrkTorU,40,260,st dev
-151,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,152.454116821289,AT_ExThCondt,40,260,min
-152,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,152.924082346092,AT_ExThCondt,40,260,mean
-153,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,153.322723388672,AT_ExThCondt,40,260,max
-154,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,170.847763061523,AT_TC_20,40,260,min
-155,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,171.5698822850016,AT_TC_20,40,260,mean
-156,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,172.246200561523,AT_TC_20,40,260,max
-157,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,190.607131958008,AT_TC_5,40,260,min
-158,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,191.28691101074224,AT_TC_5,40,260,mean
-159,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,191.790267944336,AT_TC_5,40,260,max
-160,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,213.308013916016,AT_TC_18,40,260,min
-161,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,215.73945576249207,AT_TC_18,40,260,mean
-162,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,220.077514648438,AT_TC_18,40,260,max
-163,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,236.161224365234,AT_TC_13,40,260,min
-164,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,238.72962095510906,AT_TC_13,40,260,mean
-165,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,241.293029785156,AT_TC_13,40,260,max
-166,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,1892.25,SpdEngine,40,260,min
-167,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,1896.8201357466064,SpdEngine,40,260,mean
-168,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,1901.5,SpdEngine,40,260,max
-169,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,2173.0,V_EngBrkTorU,40,260,min
-170,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,2182.3846153846152,V_EngBrkTorU,40,260,mean
-171,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,2194.0,V_EngBrkTorU,40,260,max
-172,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,0.0,PercentLoadAtCurrentSpeed,40,280,st dev
-173,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,0.29716132722541055,AcceleratedDOCInletTemperature,40,280,st dev
-174,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,280,max
-175,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,280,mean
-176,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,100.0,PercentLoadAtCurrentSpeed,40,280,min
-177,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,476.11438,AcceleratedDOCInletTemperature,40,280,min
-178,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,476.7521129460582,AcceleratedDOCInletTemperature,40,280,mean
-179,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,477.34268,AcceleratedDOCInletTemperature,40,280,max
+,file_name,measure_name,time_slice_start,time_slice_end,agg_type,measure_value,5.4.1
+0,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,280,max,142.965087890625,
+1,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,280,mean,142.57197741749877,
+2,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,280,min,142.116577148438,
+3,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,280,st dev,0.16417083357188125,
+4,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,280,max,231.945892333984,fail
+5,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,280,mean,229.92783118283603,
+6,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,280,min,227.899490356445,
+7,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,280,st dev,0.872239200599504,
+8,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,280,max,211.541412353516,fail
+9,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,280,mean,208.12912582460783,
+10,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,280,min,204.264434814453,
+11,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,280,st dev,1.6504742906549434,
+12,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,280,max,160.457382202148,pass
+13,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,280,mean,159.70900121665105,
+14,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,280,min,158.852813720703,
+15,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,280,st dev,0.2766623751918213,
+16,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,280,max,173.449005126953,pass
+17,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,280,mean,172.95847171767625,
+18,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,280,min,172.148590087891,
+19,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,280,st dev,0.25325757429207835,
+20,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,280,max,1807.75,
+21,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,280,mean,1795.5954356846473,
+22,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,280,min,1782.5,
+23,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,280,st dev,6.233204091547779,
+24,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,280,max,2470.0,
+25,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,280,mean,2443.605809128631,
+26,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,280,min,2419.0,
+27,Run 2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,280,st dev,12.862340356511703,
+28,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,320,max,477.88904,
+29,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,320,mean,476.7787505338076,
+30,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,320,min,475.90375,
+31,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,320,st dev,0.48219660256409796,
+32,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,320,max,100.0,
+33,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,320,mean,100.0,
+34,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,320,min,100.0,
+35,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,320,st dev,0.0,
+36,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,320,max,138.301071166992,
+37,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,320,mean,138.01932626092992,
+38,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,320,min,137.700668334961,
+39,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,320,st dev,0.1375256071232262,
+40,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,320,max,218.159057617188,fail
+41,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,320,mean,215.66877752012206,
+42,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,320,min,212.463165283203,
+43,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,320,st dev,1.0431071549423825,
+44,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,320,max,191.439498901367,pass
+45,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,320,mean,188.46116632753424,
+46,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,320,min,186.180252075195,
+47,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,320,st dev,0.9151967909430264,
+48,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,320,max,148.194808959961,pass
+49,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,320,mean,146.97462273322816,
+50,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,320,min,146.291351318359,
+51,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,320,st dev,0.3177182574025826,
+52,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,320,max,158.831787109375,pass
+53,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,320,mean,158.17332306451226,
+54,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,320,min,157.636184692383,
+55,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,320,st dev,0.2378049167686406,
+56,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,320,max,2002.75,
+57,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,320,mean,1995.0907473309608,
+58,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,320,min,1987.25,
+59,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,320,st dev,4.21145798602731,
+60,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,320,max,2131.0,
+61,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,320,mean,2116.8754448398577,
+62,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,320,min,2093.0,
+63,Run 3 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 442Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,320,st dev,7.728574200744325,
+64,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,max,464.01526,
+65,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,mean,463.2621953233828,
+66,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,min,462.18555,
+67,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,st dev,0.4675513263867614,
+68,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,max,100.0,
+69,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,mean,100.0,
+70,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,min,100.0,
+71,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,st dev,0.0,
+72,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,max,129.587463378906,
+73,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,mean,129.23553557894118,
+74,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,min,128.832778930664,
+75,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,st dev,0.16777549760599159,
+76,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,240,max,203.362609863281,fail
+77,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,240,mean,202.13749702415657,
+78,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,240,min,200.095504760742,
+79,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_13,40,240,st dev,0.6729016309739898,
+80,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,240,max,170.007461547852,pass
+81,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,240,mean,167.6533468825307,
+82,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,240,min,164.907806396484,
+83,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_18,40,240,st dev,1.0176009560024926,
+84,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,240,max,135.595291137695,pass
+85,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,240,mean,135.09260824782345,
+86,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,240,min,134.592086791992,
+87,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_20,40,240,st dev,0.18725716509269216,
+88,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,240,max,145.657028198242,pass
+89,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,240,mean,145.04989320365948,
+90,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,240,min,144.482406616211,
+91,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,AT_TC_5,40,240,st dev,0.30000899079914256,
+92,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,240,max,2002.75,
+93,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,240,mean,1995.8942786069651,
+94,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,240,min,1987.0,
+95,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,SpdEngine,40,240,st dev,4.91340814526842,
+96,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,max,1877.0,
+97,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,mean,1865.6169154228855,
+98,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,min,1850.0,
+99,Run 4 Bottom Debris Panel Production Exhaust Tube Wabco App BOOST 390Kw_29C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,st dev,8.176644326238666,
+100,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,max,457.64685,
+101,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,mean,456.68566358208955,
+102,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,min,455.23166,
+103,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,AcceleratedDOCInletTemperature,40,240,st dev,0.5772863226269134,
+104,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,max,100.0,
+105,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,mean,100.0,
+106,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,min,100.0,
+107,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,240,st dev,0.0,
+108,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,max,146.565322875977,
+109,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,mean,146.22930391985386,
+110,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,min,145.943878173828,
+111,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_ExThCondt,40,240,st dev,0.11686827084085014,
+112,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_13,40,240,max,225.068176269531,fail
+113,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_13,40,240,mean,223.07574045361574,
+114,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_13,40,240,min,221.466583251953,
+115,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_13,40,240,st dev,0.7515785874528785,
+116,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_18,40,240,max,199.220291137695,pass
+117,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_18,40,240,mean,196.83712449714324,
+118,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_18,40,240,min,194.519973754883,
+119,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_18,40,240,st dev,0.9902535008990706,
+120,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_20,40,240,max,161.393447875977,pass
+121,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_20,40,240,mean,160.85669856284986,
+122,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_20,40,240,min,160.530776977539,
+123,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_20,40,240,st dev,0.17608877470131815,
+124,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_5,40,240,max,179.177917480469,pass
+125,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_5,40,240,mean,178.69059404211853,
+126,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_5,40,240,min,178.290481567383,
+127,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,AT_TC_5,40,240,st dev,0.1910765548440631,
+128,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,SpdEngine,40,240,max,2004.5,
+129,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,SpdEngine,40,240,mean,1996.629353233831,
+130,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,SpdEngine,40,240,min,1991.5,
+131,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,SpdEngine,40,240,st dev,2.661072918881027,
+132,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,max,1953.0,
+133,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,mean,1940.6915422885572,
+134,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,min,1917.0,
+135,Run 5 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS 405Kw_47C_4_22_25_edaq_export.csv,V_EngBrkTorU,40,240,st dev,8.900807722305474,
+136,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,AcceleratedDOCInletTemperature,40,260,max,468.6231,
+137,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,AcceleratedDOCInletTemperature,40,260,mean,468.15297990909096,
+138,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,AcceleratedDOCInletTemperature,40,260,min,467.76022,
+139,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,AcceleratedDOCInletTemperature,40,260,st dev,0.17593086134216182,
+140,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,PercentLoadAtCurrentSpeed,40,260,max,100.0,
+141,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,PercentLoadAtCurrentSpeed,40,260,mean,100.0,
+142,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,PercentLoadAtCurrentSpeed,40,260,min,100.0,
+143,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25.csv,PercentLoadAtCurrentSpeed,40,260,st dev,0.0,
+144,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_ExThCondt,40,260,max,153.322723388672,
+145,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_ExThCondt,40,260,mean,152.924082346092,
+146,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_ExThCondt,40,260,min,152.454116821289,
+147,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_ExThCondt,40,260,st dev,0.18313597631777057,
+148,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_13,40,260,max,241.293029785156,fail
+149,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_13,40,260,mean,238.72962095510906,
+150,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_13,40,260,min,236.161224365234,
+151,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_13,40,260,st dev,1.056754848979628,
+152,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_18,40,260,max,220.077514648438,fail
+153,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_18,40,260,mean,215.73945576249207,
+154,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_18,40,260,min,213.308013916016,
+155,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_18,40,260,st dev,1.311894423676728,
+156,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_20,40,260,max,172.246200561523,pass
+157,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_20,40,260,mean,171.5698822850016,
+158,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_20,40,260,min,170.847763061523,
+159,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_20,40,260,st dev,0.2820840403609828,
+160,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_5,40,260,max,191.790267944336,pass
+161,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_5,40,260,mean,191.28691101074224,
+162,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_5,40,260,min,190.607131958008,
+163,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,AT_TC_5,40,260,st dev,0.2406353718352822,
+164,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,SpdEngine,40,260,max,1901.5,
+165,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,SpdEngine,40,260,mean,1896.8201357466064,
+166,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,SpdEngine,40,260,min,1892.25,
+167,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,SpdEngine,40,260,st dev,2.4608644969599993,
+168,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,V_EngBrkTorU,40,260,max,2194.0,
+169,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,V_EngBrkTorU,40,260,mean,2182.3846153846152,
+170,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,V_EngBrkTorU,40,260,min,2173.0,
+171,Run 6 Bottom Debris Panel Production Exhaust Tube Wabco App FLRS (1900RPM) 433Kw_47C_4_23_25_edaq_export.csv,V_EngBrkTorU,40,260,st dev,4.845948491597572,
+172,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,280,max,477.34268,
+173,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,280,mean,476.7521129460582,
+174,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,280,min,476.11438,
+175,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,AcceleratedDOCInletTemperature,40,280,st dev,0.29716132722541055,
+176,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,280,max,100.0,
+177,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,280,mean,100.0,
+178,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,280,min,100.0,
+179,Run2 Bottom Debris Panel Production Exhaust Tube Wabco App PP 459Kw_29C_4_22_25.csv,PercentLoadAtCurrentSpeed,40,280,st dev,0.0,

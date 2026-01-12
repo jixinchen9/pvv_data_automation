@@ -25,7 +25,7 @@ import operate_devx
 '''
 reconfigure original metadata writer to be easy input, and work in a remote folder
 
-and now w time slicing!
+and now w time slicing and support for devx files!
 
 '''
 os.chdir(config_builder.config_v2_inst.source_cwd)

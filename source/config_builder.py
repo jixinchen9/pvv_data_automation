@@ -18,7 +18,9 @@ class script_config:
         self.name = name
         for key, value in config_field.items():
             setattr(self, key, value)
-          
+'''
+create a config instance for all extant script
+'''          
 with open("../config/V02/config_v2.json") as f:
     config = json.load(f)
     f.close()
@@ -60,6 +62,7 @@ config_v2_inst = script_config("v2",
                                devx_path_hint = config['devx']['path_hint']
                                #source_cwd = config['start']['path']
 )
+
 
 def read_config_to_dict(filename):
     e_config = {}

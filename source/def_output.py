@@ -16,11 +16,11 @@ import log_writer
 
 def make_empty_result_df():
     result_columns= ['file_name' 
-                     , 'measure_value'
                      , 'measure_name' 
                      , 'time_slice_start'
                      , 'time_slice_end'
-                     , 'agg_type']
+                     , 'agg_type'
+                     , 'measure_value']
     df = pd.DataFrame(columns = result_columns)
     return df
 
@@ -36,44 +36,44 @@ def calc_aggs(export):
         def add_min(df):
             
             new_row = {'file_name' : export.file_name
-                             , 'measure_value' : df['measure_value'].min()
                              , 'measure_name' : channel
                              , 'time_slice_start' : export.time_slice_start
                              , 'time_slice_end' : export.time_slice_end
-                             , 'agg_type': "min"} 
+                             , 'agg_type': "min"
+                             , 'measure_value' : df['measure_value'].min()} 
             
             return new_row
         
         def add_max(df):
             
             new_row = {'file_name' : export.file_name
-                             , 'measure_value' : df['measure_value'].max()
                              , 'measure_name' : channel
                              , 'time_slice_start' : export.time_slice_start
                              , 'time_slice_end' : export.time_slice_end
-                             , 'agg_type': "max"} 
+                             , 'agg_type': "max"
+                             , 'measure_value' : df['measure_value'].max()} 
             
             return new_row
         
         def add_mean(df):
             
             new_row = {'file_name' : export.file_name
-                             , 'measure_value' : df['measure_value'].mean()
                              , 'measure_name' : channel
                              , 'time_slice_start' : export.time_slice_start
                              , 'time_slice_end' : export.time_slice_end
-                             , 'agg_type': "mean"} 
+                             , 'agg_type': "mean"
+                             , 'measure_value' : df['measure_value'].mean()} 
             
             return new_row
         
         def add_stdev(df):
             
             new_row = {'file_name' : export.file_name
-                             , 'measure_value' : df['measure_value'].std()
                              , 'measure_name' : channel
                              , 'time_slice_start' : export.time_slice_start
                              , 'time_slice_end' : export.time_slice_end
-                             , 'agg_type': "st dev"} 
+                             , 'agg_type': "st dev"
+                             , 'measure_value' : df['measure_value'].std()} 
             
             return new_row
         
@@ -90,6 +90,7 @@ def calc_aggs(export):
         log_writer.create_log_entry(talk1, log_writer.metadata_v01_log.content)
         
     return tall_df
+
 def row_for_csv(metadata_dict, fields):
     ordered_row = []
     for attribute in fields:

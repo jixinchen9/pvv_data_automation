@@ -42,7 +42,7 @@
 		"path":"D:\\try_area\\PVV_productivity_tools\\source"
 	},
 	"requirement":{
-		"path":"../input/metadata_writer",
+		"path":"../input/metadata_writer/V03_requirements",
 		"filename":"Data_Automation_Benchmark_Requirements_test_survey.csv",
 		"name_idx":0,
 		"limit_idx":2,
