@@ -43,19 +43,26 @@ A brief description of your project and what it does.
 - now you can simply run the batch file for the python script from command prompt or by double clicking.
     
 
-## Running the v2 script
-
-- Use the input form, here named "Data_Automation_Benchmark_Data_w_timeslice.csv", to specify what files will be input into the process. there are three main inputs on this page:
-* the file names 
-* the folder path where the files are, 
-* and the full path of the timeslice data source, usually a labview summary. 
-* note that all inputs must be written between the guard strings: they look like 'group_1_path_start', 'group_1_path_end' and so on, the text scraping for inputs depends on these guard strings and will only pick up inputs written between the guards.
-- Add/verify hintwords in time slice information file or labview summary. the process uses hint words to find the row with run name and the row with time slice start and end. usually the time slice hint word will not be in a labview summary by default. if you don't write the hint word the process will still run but it will not slice the data, metadata will be calculated that may not be steady state. the hint words the process uses can be edited in the config file. 
-- Define what channels should be included in another file in the input folder "Channel_list_v02.csv", same guard string logic applies here. 
+## Running the script
+- Currently 2 processes are provided, one runs metadata generation with requirement evaluation, the other just runs metadata generation; note that the input form must be completed to run the script with requirement evaluation.
+- Use the input form, here named "Data_Automation_Benchmark_Data_w_timeslice.csv", to specify what files will be input into the process. there are four main inputs on this page:
+    - the file names 
+    - the folder path where the files are, 
+    - and the full path of the timeslice data source, usually a labview summary. 
+    - note that all inputs must be written between the guard strings: they look like 'group_1_path_start', 'group_1_path_end' and so on, the text scraping for inputs depends on these guard strings and will only pick up inputs written between the guards.
+    - Define what channels should be included
+- Add/verify hintwords in time slice information file i.e. labview summary. the process uses hint words to find the row with run name and the row with time slice start and end. usually the time slice hint word will not be in a labview summary by default. if you don't write the hint word the process will still run but it will not slice the data, metadata will be calculated that may not be steady state. the hint words the process uses can be edited in the config file. 
+- Use the requirement input form to add requirements you wish to evaluate:
+    - all requirements to be evaluated are entered between guard strings "Requirement_start" and "Requirement_end" much as in the data file input 
+    - the requirement name will be used as a column to indicate pass/fail in the summary output
+    - the requirement value and requirement operator are used to evaluate the requirement, for example if the value is '200' and the operator is '<=', the the requirement will be evaluated to 'pass' if the measure value is less than or equal to '200'
+    - the data measure entry tells script which aggregate value to look at, min, max, or avg
+    - channels are input starting in column K, the script will look for any many channels as are input past channel K
+    - the "OR" in requirement formula means that all channels are evaluated using the same criteria
 - Make selections in config, usually not needed, but see next section 
 
 ## The config file explained
-- metadata writer v02 uses config_v2;
+- both processes use config_v2.
 - input
     * path: folder where input forms are
     * data: the name of input form for config writer v2, you can copy the form, rename it, and update it here and the script will use it to run the process
@@ -93,3 +100,7 @@ A brief description of your project and what it does.
     * path_hint: this helps the script distinguish devx files from sie files or sie exports, devx file network file paths always have the word 'devx' in the file path
 - Attributes
     * name: metadatawriter v1 used this to scrape the ncode generated metadata exports, you basically used this to choose what stats to export, not used any more
+- requirement
+    * path: folder where requirement input files are
+    * filename: input file name
+    * the rest: to build the requirement objects, the script relies on the indexing of the input spreadsheet, this means users are strongly discouraged from changing the order of the columns in the input, unless corresponding changes are made in the config

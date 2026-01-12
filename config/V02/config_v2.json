@@ -1,11 +1,11 @@
 {
 	"Input":{
-		"path":"../input/metadata_writer/V02_script",
+		"path":"../input/metadata_writer/input_data_files",
 		"data":"Data_Automation_Benchmark_Data_w_timeslice.csv",
 		"requirement":"na"
 	},
 	"Filter":{
-		"path":"../input/metadata_writer/V02_script",
+		"path":"../input/metadata_writer/input_data_files",
 		"filename":"Data_Automation_Benchmark_Data_w_timeslice.csv"
 	},
 	"timeslice":{
@@ -42,7 +42,7 @@
 		"path":"D:\\try_area\\PVV_productivity_tools\\source"
 	},
 	"requirement":{
-		"path":"../input/metadata_writer/V03_requirements",
+		"path":"../input/metadata_writer/input_requirements",
 		"filename":"Data_Automation_Benchmark_Requirements_test_survey.csv",
 		"name_idx":0,
 		"limit_idx":2,
