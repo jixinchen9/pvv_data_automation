@@ -13,11 +13,12 @@ A brief description of your project and what it does.
 
 ## Features
 
-- List of features in your project
-- v2 metadata writer: script creates tall table summarzing channels of user selection in a list of input files, the files will be trimmed according to steady state time start and ends in another specified input file
+- v3 metadata writer adds functions to evaluate whether results meet requirements based on what users put in the 'requirements' input form.
+- v2 metadata writer: script creates tall table summarizing channels of user selection in a list of input files, the files will be trimmed according to steady state time start and ends in another specified input file
     - Script reads input of file names and folder lists, file names can be partially matched, case insensitive
-    - Script runs libsie api demo .exe from hbm to convert sie files to csv 
+    - Script runs libsie api demo .exe from hbm to convert sie files to csv
     - script collects time series data for specified channels from the csv export
+    - Script collects data collected in devx as well if containing folder is specified, and collects data into dataframes with separate workflow
     - Script scrapes labview summaries for time slice start time and end time from a specified labview summary
     - script matches the runs in the labview summary with the input files based on set overlap of words in the name
     - script checks each time series for each channel to see if the specified steady state time can be applied
@@ -29,8 +30,6 @@ A brief description of your project and what it does.
     - Script can run ncode to generate metadata files for each test file
     - Script can search metadata file for desired channel data or all channel data
     - Script can output compiled metadata as csv
-- Feature 2
-- Feature 3
 
 ## Setup
 
